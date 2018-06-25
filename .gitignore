@@ -37,6 +37,7 @@ yarn.lock
 package-lock.json
 
 /docker/*
+!/docker/fpm/Dockerfile
 !/docker/akeneo.conf
 !/docker/httpd.conf
 docker-compose.yml

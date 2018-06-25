@@ -42,7 +42,7 @@ package-lock.json
 docker-compose.yml
 
 # Phpstorm
-/.idea
-/.idea/*
+.idea
+.idea/*
 cache.properties
 /phpunit.phar

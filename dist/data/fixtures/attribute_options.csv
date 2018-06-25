@@ -1,0 +1,689 @@
+"code";"label-fr_FR";"attribute";"sort_order"
+"lbc";"Leboncoin";"plateformimmobilier";0
+"aval";"A Vendre A Louer";"plateformimmobilier";1
+"lbc";"Leboncoin";"plateformautomobile";0
+"lbc";"Leboncoin";"plateformemploi";0
+"lec";"Leboncoin Emploi Cadre";"plateformemploi";1
+"abc";"ABC";"softwareautomobile";0
+"activcar";"ACTIVCAR";"softwareautomobile";1
+"alpha_2a";"ALPHA 2A";"softwareautomobile";2
+"alpha_dms";"ALPHA DMS";"softwareautomobile";3
+"api_mecanic";"API MECANIC";"softwareautomobile";4
+"aramis";"ARAMIS";"softwareautomobile";5
+"auto_gestion";"AUTO GESTION";"softwareautomobile";6
+"autobox";"AUTOBOX";"softwareautomobile";7
+"autocerfa";"AUTOCERFA";"softwareautomobile";8
+"autogest";"AUTOGEST";"softwareautomobile";9
+"autolink";"AUTOLINK";"softwareautomobile";10
+"automanager";"AUTOMANAGER";"softwareautomobile";11
+"babelweb";"BABELWEB";"softwareautomobile";12
+"bhcar";"BHCAR";"softwareautomobile";13
+"bmw";"BMW";"softwareautomobile";14
+"buildeo";"BUILDEO";"softwareautomobile";15
+"be_seen";"Be Seen";"softwareautomobile";16
+"candy";"CANDY";"softwareautomobile";17
+"car_pack_ig_soft";"CAR PACK (IG SOFT)";"softwareautomobile";18
+"cardiff";"CARDIFF";"softwareautomobile";19
+"carflow_manager";"CARFLOW MANAGER";"softwareautomobile";20
+"cargest";"CARGEST";"softwareautomobile";21
+"carpremium";"CARPREMIUM";"softwareautomobile";22
+"carshop";"CARSHOP";"softwareautomobile";23
+"cartools";"CARTOOLS";"softwareautomobile";24
+"carview_3d_soft";"CARVIEW (3d-soft)";"softwareautomobile";25
+"ckseven";"CKSEVEN";"softwareautomobile";26
+"clsystem";"CLSYSTEM";"softwareautomobile";27
+"cyberauto";"CYBERAUTO";"softwareautomobile";28
+"data_first";"DATA FIRST";"softwareautomobile";29
+"datacar_datafirst";"DATACAR (DataFirst)";"softwareautomobile";30
+"dcsnet";"DCSNET";"softwareautomobile";31
+"distinxion";"DISTINXION";"softwareautomobile";32
+"ducati";"DUCATI";"softwareautomobile";33
+"dealnet";"DealNet";"softwareautomobile";34
+"e_garage";"E-GARAGE";"softwareautomobile";35
+"eauction";"EAUCTION";"softwareautomobile";36
+"ebp_meca";"EBP MECA";"softwareautomobile";37
+"ecomouest";"ECOMOUEST";"softwareautomobile";38
+"eden_auto";"EDEN AUTO";"softwareautomobile";39
+"eris_motors";"ERIS MOTORS";"softwareautomobile";40
+"esa_web_xc_developpement";"ESA WEB (xc-developpement)";"softwareautomobile";41
+"eurolinea";"EUROLINEA";"softwareautomobile";42
+"francepronet";"FRANCEPRONET";"softwareautomobile";43
+"formasoft";"Formasoft";"softwareautomobile";44
+"gaap";"GAAP";"softwareautomobile";45
+"gad_garage";"GAD GARAGE";"softwareautomobile";46
+"groupe_autoeasy";"GROUPE AUTOEASY";"softwareautomobile";47
+"groupe_gueudet";"GROUPE GUEUDET";"softwareautomobile";48
+"groupe_jfc";"GROUPE JFC";"softwareautomobile";49
+"groupe_laudis";"GROUPE LAUDIS";"softwareautomobile";50
+"groupe_parcours";"GROUPE PARCOURS";"softwareautomobile";51
+"groupe_vpn";"GROUPE VPN";"softwareautomobile";52
+"gtapro_vo_vn";"GTAPro VO/VN";"softwareautomobile";53
+"groupe_hess";"Groupe Hess";"softwareautomobile";54
+"i_car_dms";"I-CAR DMS";"softwareautomobile";55
+"i_car_mobility";"I-CAR MOBILITY";"softwareautomobile";56
+"icar";"ICAR";"softwareautomobile";57
+"icarpro_autoselection_cargest";"ICARPRO (autoselection / cargest)";"softwareautomobile";58
+"imedia_groupe_idm";"IMEDIA (GROUPE IDM)";"softwareautomobile";59
+"incomm";"INCOMM";"softwareautomobile";60
+"ipl_porsche";"IPL Porsche";"softwareautomobile";61
+"iziscar";"IZISCAR";"softwareautomobile";62
+"inetcar";"InetCar";"softwareautomobile";63
+"kangourou_crm";"KANGOUROU CRM";"softwareautomobile";64
+"kepler_soft";"KEPLER SOFT";"softwareautomobile";65
+"lmg_concept";"LMG CONCEPT";"softwareautomobile";66
+"logiciel_perso";"LOGICIEL PERSO";"softwareautomobile";67
+"logvo_evialog";"LOGVO (EVIALOG)";"softwareautomobile";68
+"luxauto";"LUXAUTO";"softwareautomobile";69
+"manheim_modix";"MANHEIM (Modix)";"softwareautomobile";70
+"mecaview_3d_soft";"MECAVIEW (3d-soft)";"softwareautomobile";71
+"merezo";"MEREZO";"softwareautomobile";72
+"mon_agence_automobile";"MON AGENCE AUTOMOBILE";"softwareautomobile";73
+"motortrak";"MOTORTRAK";"softwareautomobile";74
+"neowebcar";"NEOWEBCAR";"softwareautomobile";75
+"nexeto";"NEXETO";"softwareautomobile";76
+"opisto";"OPISTO";"softwareautomobile";77
+"oxylio";"OXYLIO";"softwareautomobile";78
+"planet_vo";"PLANET VO";"softwareautomobile";79
+"proximeca";"PROXIMECA";"softwareautomobile";80
+"publicom";"PUBLICOM";"softwareautomobile";81
+"passerellevo";"PasserelleVO";"softwareautomobile";82
+"pushcar";"Pushcar";"softwareautomobile";83
+"radar_vo";"RADAR VO";"softwareautomobile";84
+"reavo";"ReaVO";"softwareautomobile";85
+"saisie_en_ligne";"SAISIE EN LIGNE";"softwareautomobile";86
+"seven_car";"SEVEN CAR";"softwareautomobile";87
+"shop_application";"SHOP APPLICATION";"softwareautomobile";88
+"smartcity";"SMARTCITY";"softwareautomobile";89
+"spirit";"SPIRIT";"softwareautomobile";90
+"starterre";"STARTERRE";"softwareautomobile";91
+"suzuki_moto_france";"SUZUKI MOTO FRANCE";"softwareautomobile";92
+"systenium";"SYSTENIUM";"softwareautomobile";93
+"spider_vo";"Spider VO";"softwareautomobile";94
+"top_auto_rc";"TOP AUTO RC";"softwareautomobile";95
+"tec3h";"TeC3H";"softwareautomobile";96
+"v12";"V12";"softwareautomobile";97
+"via_automobile";"VIA AUTOMOBILE";"softwareautomobile";98
+"vo_line_blue_line";"VO-Line (Blue-Line)";"softwareautomobile";99
+"vroomiz";"VROOMIZ";"softwareautomobile";100
+"vulcain";"VULCAIN";"softwareautomobile";101
+"wincar";"WINCAR";"softwareautomobile";102
+"winmotor_micrauto";"WINMOTOR (Micrauto)";"softwareautomobile";103
+"winteam";"WINTEAM";"softwareautomobile";104
+"webmobile24";"WebMobile24";"softwareautomobile";105
+"your_daily_drive";"YOUR DAILY DRIVE";"softwareautomobile";106
+"bnp";"BNP";"softwareimmobilierneuf";0
+"bouyguesneuf";"BouyguesNeuf";"softwareimmobilierneuf";1
+"cogedim";"COGEDIM";"softwareimmobilierneuf";2
+"emerige";"EMERIGE";"softwareimmobilierneuf";3
+"euroimmobilia";"EUROIMMOBILIA";"softwareimmobilierneuf";4
+"eiffageimmobilier";"EiffageImmobilier";"softwareimmobilierneuf";5
+"entities";"Entities";"softwareimmobilierneuf";6
+"europeanhomes";"EuropeanHomes";"softwareimmobilierneuf";7
+"extranet_neuf";"Extranet_Neuf";"softwareimmobilierneuf";8
+"icade";"Icade";"softwareimmobilierneuf";9
+"immolead";"ImmoLead";"softwareimmobilierneuf";10
+"interconstruction_mgc_connecting";"Interconstruction ( MGC Connecting )";"softwareimmobilierneuf";11
+"kaufman_broad";"KAUFMAN & BROAD";"softwareimmobilierneuf";12
+"nexity";"Nexity";"softwareimmobilierneuf";13
+"ogic";"OGIC";"softwareimmobilierneuf";14
+"pichet";"PICHET";"softwareimmobilierneuf";15
+"sully_promotions";"Sully promotions";"softwareimmobilierneuf";16
+"ubiflowneuf";"UbiflowNeuf";"softwareimmobilierneuf";17
+"urbat";"Urbat";"softwareimmobilierneuf";18
+"urbis";"Urbis";"softwareimmobilierneuf";19
+"vinci";"Vinci";"softwareimmobilierneuf";20
+"visiteonline";"VisiteOnline";"softwareimmobilierneuf";21
+"les_nouveaux_constructeurs";"les-nouveaux-constructeurs";"softwareimmobilierneuf";22
+"123webimmo";"123WEBIMMO";"softwareimmobilierancien";0
+"3clics";"3CLICS";"softwareimmobilierancien";1
+"a2lds";"A2LDS";"softwareimmobilierancien";2
+"ab6net";"AB6NET";"softwareimmobilierancien";3
+"abitavision";"ABITAVISION";"softwareimmobilierancien";4
+"abitaweb";"ABITAWEB";"softwareimmobilierancien";5
+"ac3";"AC3";"softwareimmobilierancien";6
+"acreat";"ACREAT";"softwareimmobilierancien";7
+"activimmo";"ACTIVIMMO";"softwareimmobilierancien";8
+"adapt_immo";"ADAPT IMMO";"softwareimmobilierancien";9
+"adb";"AdB+";"softwareimmobilierancien";10
+"adipso";"ADIPSO";"softwareimmobilierancien";11
+"adplace";"adplace";"softwareimmobilierancien";12
+"advance_agent";"ADVANCE AGENT";"softwareimmobilierancien";13
+"agence_plus";"AGENCE PLUS";"softwareimmobilierancien";14
+"agoraction";"AGORACTION";"softwareimmobilierancien";15
+"akisimmo";"AKISIMMO";"softwareimmobilierancien";16
+"alize_net";"ALIZE.NET";"softwareimmobilierancien";17
+"apimo";"APIMO";"softwareimmobilierancien";18
+"aptalis";"APTALIS";"softwareimmobilierancien";19
+"area";"AREA";"softwareimmobilierancien";20
+"arkiane";"ARKIANE";"softwareimmobilierancien";21
+"arociel";"AROCIEL";"softwareimmobilierancien";22
+"athos";"ATHOS";"softwareimmobilierancien";23
+"atol";"ATOL";"softwareimmobilierancien";24
+"atonis";"ATONIS";"softwareimmobilierancien";25
+"axessia";"AXESSIA";"softwareimmobilierancien";26
+"basil";"BASIL";"softwareimmobilierancien";27
+"bellissimmo";"Bellissimmo";"softwareimmobilierancien";28
+"bestimmo";"BESTIMMO";"softwareimmobilierancien";29
+"beyat";"BEYAT";"softwareimmobilierancien";30
+"blg_immo";"BLG IMMO";"softwareimmobilierancien";31
+"bnity";"BNITY";"softwareimmobilierancien";32
+"bvi";"BVI";"softwareimmobilierancien";33
+"bysoft";"BYSOFT";"softwareimmobilierancien";34
+"capmi";"CAPMI";"softwareimmobilierancien";35
+"casiopae";"CASIOPAE";"softwareimmobilierancien";36
+"centurynet";"CENTURYNET";"softwareimmobilierancien";37
+"cession_soft";"CESSION SOFT";"softwareimmobilierancien";38
+"chronotech";"CHRONOTECH";"softwareimmobilierancien";39
+"cif_solution_proprietaire";"CIF Solution propriétaire";"softwareimmobilierancien";40
+"clickanet";"CLICKANET";"softwareimmobilierancien";41
+"clover";"CLOVER";"softwareimmobilierancien";42
+"coccitransac";"COCCITRANSAC";"softwareimmobilierancien";43
+"comlink";"COMLINK";"softwareimmobilierancien";44
+"connect_immo_plus";"CONNECT'IMMO PLUS";"softwareimmobilierancien";45
+"consortium_immobilier";"CONSORTIUM IMMOBILIER";"softwareimmobilierancien";46
+"cosmosoft";"COSMOSOFT";"softwareimmobilierancien";47
+"costockage";"costockage";"softwareimmobilierancien";48
+"coxynelle";"COXYNELLE";"softwareimmobilierancien";49
+"crypto";"CRYPTO";"softwareimmobilierancien";50
+"cybel";"CYBEL";"softwareimmobilierancien";51
+"d2i";"D2I";"softwareimmobilierancien";52
+"dovadis";"DOVADIS";"softwareimmobilierancien";53
+"drive_immo";"DRIVE IMMO";"softwareimmobilierancien";54
+"e_zimmo";"E-ZIMMO";"softwareimmobilierancien";55
+"e2";"E2";"softwareimmobilierancien";56
+"easy2pilot";"EASY2PILOT";"softwareimmobilierancien";57
+"ecomouest";"ECOMOUEST";"softwareimmobilierancien";58
+"efficity";"EFFICITY";"softwareimmobilierancien";59
+"ego_real_estate";"EGO REAL ESTATE";"softwareimmobilierancien";60
+"ekicial";"Ekicial";"softwareimmobilierancien";61
+"ekimmobilier";"EKIMMOBILIER";"softwareimmobilierancien";62
+"ekinox";"EKINOX";"softwareimmobilierancien";63
+"elena_5";"ELENA 5";"softwareimmobilierancien";64
+"elena_5_et_lolita";"ELENA 5 ET LOLITA";"softwareimmobilierancien";65
+"elena_entreprise";"ELENA ENTREPRISE";"softwareimmobilierancien";66
+"elephantbird";"ELEPHANTBIRD";"softwareimmobilierancien";67
+"ellipse";"ELLIPSE";"softwareimmobilierancien";68
+"emoweb";"EMOWEB";"softwareimmobilierancien";69
+"emulis_pro";"Emulis Pro";"softwareimmobilierancien";70
+"enova_transactions";"eNova Transactions";"softwareimmobilierancien";71
+"enova_vacances";"eNova Vacances";"softwareimmobilierancien";72
+"entities";"ENTITIES";"softwareimmobilierancien";73
+"espace_technologie";"ESPACE TECHNOLOGIE";"softwareimmobilierancien";74
+"eudonet";"EUDONET";"softwareimmobilierancien";75
+"excel_adresse";"EXCEL’ADRESSE";"softwareimmobilierancien";76
+"expert_crm";"EXPERT_CRM";"softwareimmobilierancien";77
+"fnaim";"FNAIM";"softwareimmobilierancien";78
+"fnaim_connect";"FNAIM CONNECT";"softwareimmobilierancien";79
+"formasoft";"Formasoft";"softwareimmobilierancien";80
+"gbi_aeline";"GBI (Aeline)";"softwareimmobilierancien";81
+"genapi";"GENAPI";"softwareimmobilierancien";82
+"geoxia";"GEOXIA";"softwareimmobilierancien";83
+"gercop";"GERCOP";"softwareimmobilierancien";84
+"gerim";"GERIM";"softwareimmobilierancien";85
+"gesteam";"GESTEAM";"softwareimmobilierancien";86
+"gimi";"GIMI";"softwareimmobilierancien";87
+"gimini";"GIMINI";"softwareimmobilierancien";88
+"gizmo";"GIZMO";"softwareimmobilierancien";89
+"global_notarial";"GLOBAL NOTARIAL";"softwareimmobilierancien";90
+"go_real_estate";"GO REAL ESTATE";"softwareimmobilierancien";91
+"gouts_de_web";"GOUTS DE WEB";"softwareimmobilierancien";92
+"goventis";"GOVENTIS";"softwareimmobilierancien";93
+"gpi_log_in";"GPI (log'in)";"softwareimmobilierancien";94
+"guy_hoquet_horizon";"GUY HOQUET (Horizon)";"softwareimmobilierancien";95
+"habitania";"HABITANIA";"softwareimmobilierancien";96
+"habitatsoft";"HABITATSOFT";"softwareimmobilierancien";97
+"home_online";"Home Online";"softwareimmobilierancien";98
+"horizon";"HORIZON";"softwareimmobilierancien";99
+"i_list";"I-List";"softwareimmobilierancien";100
+"i_online";"I-ONLINE";"softwareimmobilierancien";101
+"ics";"ICS";"softwareimmobilierancien";102
+"idealburo";"IDEALBURO";"softwareimmobilierancien";103
+"igc_construction";"IGC CONSTRUCTION";"softwareimmobilierancien";104
+"iloimmo";"ILOIMMO";"softwareimmobilierancien";105
+"imhotep";"IMHOTEP";"softwareimmobilierancien";106
+"immo_manageur";"IMMO MANAGEUR";"softwareimmobilierancien";107
+"immo_nx";"IMMO NX";"softwareimmobilierancien";108
+"immo_one";"IMMO ONE";"softwareimmobilierancien";109
+"immo_stock";"IMMO STOCK";"softwareimmobilierancien";110
+"immo_in";"IMMO'IN";"softwareimmobilierancien";111
+"immociel";"IMMOCIEL";"softwareimmobilierancien";112
+"immodeclic";"IMMODECLIC";"softwareimmobilierancien";113
+"immofact";"IMMOFACT";"softwareimmobilierancien";114
+"immoing";"IMMOING";"softwareimmobilierancien";115
+"immolite";"IMMOLITE";"softwareimmobilierancien";116
+"immolog";"IMMOLOG";"softwareimmobilierancien";117
+"immonot_pro";"IMMONOT PRO";"softwareimmobilierancien";118
+"immoprice";"IMMOPRICE";"softwareimmobilierancien";119
+"immoquartz";"IMMOQUARTZ";"softwareimmobilierancien";120
+"immoselect";"IMMOSELECT";"softwareimmobilierancien";121
+"immosky";"Immosky";"softwareimmobilierancien";122
+"immosoft";"IMMOSOFT";"softwareimmobilierancien";123
+"immosolve";"IMMOSOLVE";"softwareimmobilierancien";124
+"immosphers";"IMMOSPHERS";"softwareimmobilierancien";125
+"immostore";"IMMOSTORE";"softwareimmobilierancien";126
+"immozeo";"IMMOZEO";"softwareimmobilierancien";127
+"immozz";"IMMOZZ";"softwareimmobilierancien";128
+"imovision";"IMOVISION";"softwareimmobilierancien";129
+"incomm";"INCOMM";"softwareimmobilierancien";130
+"inmofactory";"INMOFACTORY";"softwareimmobilierancien";131
+"inmofocus";"INMOFOCUS";"softwareimmobilierancien";132
+"inmovilla";"INMOVILLA";"softwareimmobilierancien";133
+"intelys";"INTELYS";"softwareimmobilierancien";134
+"ipsoft_cube_systemes";"IPSOFT (Cube Systemes)";"softwareimmobilierancien";135
+"irent_net";"IRENT.NET";"softwareimmobilierancien";136
+"isis_immopen";"ISIS (immopen)";"softwareimmobilierancien";137
+"iws";"IWS";"softwareimmobilierancien";138
+"jalis";"JALIS";"softwareimmobilierancien";139
+"jestimo";"JESTIMO";"softwareimmobilierancien";140
+"js_immo";"JS IMMO";"softwareimmobilierancien";141
+"juris";"JURIS";"softwareimmobilierancien";142
+"jview_immo_izimmo_iziasys";"JVIEW IMMO - IZIMMO (IZIASYS)";"softwareimmobilierancien";143
+"kaio";"KAIO";"softwareimmobilierancien";144
+"kel";"KEL";"softwareimmobilierancien";145
+"kernix";"KERNIX";"softwareimmobilierancien";146
+"kiwibo";"KIWIBO";"softwareimmobilierancien";147
+"kr2";"KR2";"softwareimmobilierancien";148
+"kyero";"KYERO";"softwareimmobilierancien";149
+"la_boite_immo";"LA BOITE IMMO";"softwareimmobilierancien";150
+"la_factory";"LA FACTORY";"softwareimmobilierancien";151
+"la_place_de_l_immobilier_pro";"LA PLACE DE L'IMMOBILIER PRO";"softwareimmobilierancien";152
+"la_residence_action";"La residence (Action)";"softwareimmobilierancien";153
+"labase";"LABASE";"softwareimmobilierancien";154
+"ladpi";"LADPI";"softwareimmobilierancien";155
+"larep_immo_publissimo";"LAREP_IMMO_PUBLISSIMO";"softwareimmobilierancien";156
+"le_soft";"LE SOFT";"softwareimmobilierancien";157
+"leizee";"LEIZEE";"softwareimmobilierancien";158
+"les_cles_du_midi";"LES CLES DU MIDI";"softwareimmobilierancien";159
+"lesty";"LESTY";"softwareimmobilierancien";160
+"liberte_immo";"LIBERTE IMMO";"softwareimmobilierancien";161
+"linkeo";"LINKEO";"softwareimmobilierancien";162
+"linx";"LINX";"softwareimmobilierancien";163
+"lockimmo";"LOCKIMMO";"softwareimmobilierancien";164
+"log_info";"LOG INFO";"softwareimmobilierancien";165
+"log_in_space";"LOG'IN SPACE";"softwareimmobilierancien";166
+"logestia";"LOGESTIA";"softwareimmobilierancien";167
+"logiciel_perso";"LOGICIEL PERSO";"softwareimmobilierancien";168
+"logikeops";"logikeops";"softwareimmobilierancien";169
+"loginota";"LOGINOTA";"softwareimmobilierancien";170
+"logique_gerance";"LOGIQUE GERANCE";"softwareimmobilierancien";171
+"logisquare";"LOGISQUARE";"softwareimmobilierancien";172
+"logissimmo_logisneuf";"LOGISSIMMO (LogisNeuf)";"softwareimmobilierancien";173
+"logissimo";"LOGISSIMO";"softwareimmobilierancien";174
+"lolita";"LOLITA";"softwareimmobilierancien";175
+"loti_com";"LOTI'COM";"softwareimmobilierancien";176
+"lotikiosk_multidiffusion";"LOTIKIOSK MULTIDIFFUSION";"softwareimmobilierancien";177
+"maison_fr";"MAISON.FR";"softwareimmobilierancien";178
+"maximmo";"MAXIMMO";"softwareimmobilierancien";179
+"mdtr_wiptech_solutions";"MDTR - Wiptech Solutions";"softwareimmobilierancien";180
+"mediaweb";"MEDIAWEB";"softwareimmobilierancien";181
+"mgc_communication";"MGC COMMUNICATION";"softwareimmobilierancien";182
+"mister_harry";"MISTER HARRY";"softwareimmobilierancien";183
+"monte_carlo_multimedia";"MONTE-CARLO MULTIMEDIA";"softwareimmobilierancien";184
+"mybookimmo";"MyBookImmo";"softwareimmobilierancien";185
+"naxos";"NAXOS";"softwareimmobilierancien";186
+"net_profil";"NET-PROFIL";"softwareimmobilierancien";187
+"netty";"NETTY";"softwareimmobilierancien";188
+"nexity";"NEXITY";"softwareimmobilierancien";189
+"nexus";"NEXUS";"softwareimmobilierancien";190
+"notaires_fr";"Notaires.fr";"softwareimmobilierancien";191
+"odyssee";"ODYSSEE";"softwareimmobilierancien";192
+"office_immo";"OFFICE IMMO";"softwareimmobilierancien";193
+"openmedia";"OPENMEDIA";"softwareimmobilierancien";194
+"ornitorinc";"ORNITORINC";"softwareimmobilierancien";195
+"orpi_connect";"ORPI CONNECT";"softwareimmobilierancien";196
+"ows";"OWS";"softwareimmobilierancien";197
+"pack_transac";"PACK TRANSAC";"softwareimmobilierancien";198
+"partagimmo";"PARTAGIMMO";"softwareimmobilierancien";199
+"pericles";"PERICLES";"softwareimmobilierancien";200
+"pericles_air";"PERICLES AIR";"softwareimmobilierancien";201
+"pericles_net";"PERICLES.NET";"softwareimmobilierancien";202
+"pha_creation";"PHA CREATION";"softwareimmobilierancien";203
+"pi_data_luzmedia";"PI DATA (Luzmedia)";"softwareimmobilierancien";204
+"pilotim";"PILOTIM";"softwareimmobilierancien";205
+"previsite";"Previsite";"softwareimmobilierancien";206
+"primmo_display";"PRIMMO-DISPLAY";"softwareimmobilierancien";207
+"procom";"PROCOM";"softwareimmobilierancien";208
+"procomm_evolution";"PROCOMM EVOLUTION";"softwareimmobilierancien";209
+"proghabitat";"PROGHABITAT";"softwareimmobilierancien";210
+"progissimmo";"PROGISSIMMO";"softwareimmobilierancien";211
+"promoges";"PROMOGES";"softwareimmobilierancien";212
+"proppy";"PROPPY";"softwareimmobilierancien";213
+"proximedia";"PROXIMEDIA";"softwareimmobilierancien";214
+"publika";"PUBLIKA";"softwareimmobilierancien";215
+"realtransac";"REALTRANSAC";"softwareimmobilierancien";216
+"resales_online";"RESALES ONLINE";"softwareimmobilierancien";217
+"reseau_habitat_plus";"RESEAU HABITAT PLUS";"softwareimmobilierancien";218
+"reso3c";"RESO3C";"softwareimmobilierancien";219
+"rh_immo";"RH IMMO";"softwareimmobilierancien";220
+"saganet";"SAGANET";"softwareimmobilierancien";221
+"saisie_en_ligne";"SAISIE EN LIGNE";"softwareimmobilierancien";222
+"saphir";"SAPHIR";"softwareimmobilierancien";223
+"sdgi";"SDGI";"softwareimmobilierancien";224
+"seilia";"SEILIA";"softwareimmobilierancien";225
+"selectimmo";"SELECTIMMO";"softwareimmobilierancien";226
+"seres";"SERES";"softwareimmobilierancien";227
+"serge_daniel";"SERGE DANIEL";"softwareimmobilierancien";228
+"sesame";"SESAME";"softwareimmobilierancien";229
+"sevicimmo";"SEVICIMMO";"softwareimmobilierancien";230
+"sigeo_lamy";"SIGEO (LAMY)";"softwareimmobilierancien";231
+"sinergic_gerance";"SINERGIC GERANCE";"softwareimmobilierancien";232
+"sitimmo_saisie";"SITIMMO SAISIE";"softwareimmobilierancien";233
+"skarabee";"SKARABEE";"softwareimmobilierancien";234
+"snpi_access";"SNPI ACCESS";"softwareimmobilierancien";235
+"sooprema";"SOOPREMA";"softwareimmobilierancien";236
+"sphere";"SPHERE";"softwareimmobilierancien";237
+"startech";"STARTECH";"softwareimmobilierancien";238
+"sud_ouest_immo";"SUD OUEST IMMO";"softwareimmobilierancien";239
+"thetrawin_seiitra";"THETRAWIN (SEIITRA)";"softwareimmobilierancien";240
+"timm";"TIMM";"softwareimmobilierancien";241
+"toolimmo";"TOOLIMMO";"softwareimmobilierancien";242
+"totalimmo_seiitra";"TOTALIMMO (SEIITRA)";"softwareimmobilierancien";243
+"trade_in_neowi";"TRADE-IN (Neowi)";"softwareimmobilierancien";244
+"transac_net";"TRANSAC NET";"softwareimmobilierancien";245
+"transacforce";"TRANSACFORCE";"softwareimmobilierancien";246
+"transactimo";"TRANSACTIMO";"softwareimmobilierancien";247
+"transactium_chr_link";"TRANSACTIUM (CHR-LINK)";"softwareimmobilierancien";248
+"transacweb";"TRANSACWEB";"softwareimmobilierancien";249
+"transaktimmo";"TRANSAKTIMMO";"softwareimmobilierancien";250
+"transellis";"TRANSELLIS";"softwareimmobilierancien";251
+"transim";"TRANSIM";"softwareimmobilierancien";252
+"transtel";"TRANSTEL";"softwareimmobilierancien";253
+"twimmo_net";"TWIMMO.NET";"softwareimmobilierancien";254
+"ult_immo";"Ult'Immo";"softwareimmobilierancien";255
+"vigicorp";"VIGICORP";"softwareimmobilierancien";256
+"vigra_transaction";"VIGRA TRANSACTION";"softwareimmobilierancien";257
+"visit_concept";"VISIT CONCEPT";"softwareimmobilierancien";258
+"visual_qie";"VISUAL QIE";"softwareimmobilierancien";259
+"visual_qie_web";"VISUAL QIE WEB";"softwareimmobilierancien";260
+"vitahome";"VITAHOME";"softwareimmobilierancien";261
+"voosoft";"VOOSOFT";"softwareimmobilierancien";262
+"walabali";"WALABALI";"softwareimmobilierancien";263
+"wall_market";"WALL MARKET";"softwareimmobilierancien";264
+"web_alternatif";"WEB ALTERNATIF";"softwareimmobilierancien";265
+"webgenery";"WEBGENERY";"softwareimmobilierancien";266
+"webjuste";"WEBJUSTE";"softwareimmobilierancien";267
+"win_immobilier";"Win Immobilier";"softwareimmobilierancien";268
+"wizzimmo";"WIZZIMMO";"softwareimmobilierancien";269
+"ad_men";"ad-men";"softwareemploi";0
+"ad_rh";"ad-rh";"softwareemploi";1
+"allan_allman";"allan-allman";"softwareemploi";2
+"avature";"avature";"softwareemploi";3
+"beetween";"beetween";"softwareemploi";4
+"boondmanager";"boondmanager";"softwareemploi";5
+"broadbean_ats";"broadbean-ats";"softwareemploi";6
+"bulhorn";"bulhorn";"softwareemploi";7
+"candidatus";"candidatus";"softwareemploi";8
+"candirec";"candirec";"softwareemploi";9
+"connexys";"connexys";"softwareemploi";10
+"cornerstone";"cornerstone";"softwareemploi";11
+"cts_consulting";"cts-consulting";"softwareemploi";12
+"cvmail";"cvmail";"softwareemploi";13
+"digitalrecruiters";"digitalrecruiters";"softwareemploi";14
+"dlsi_ats_impleo";"dlsi-ats-impleo";"softwareemploi";15
+"easycruit";"easycruit";"softwareemploi";16
+"easytemp";"easytemp";"softwareemploi";17
+"eolia";"eolia";"softwareemploi";18
+"erecruiter";"erecruiter";"softwareemploi";19
+"eudonet";"eudonet";"softwareemploi";20
+"expertnet_technologies";"expertnet-technologies";"softwareemploi";21
+"flatchr_ats";"flatchr-ats";"softwareemploi";22
+"foederis";"foederis";"softwareemploi";23
+"genius_people";"genius-people";"softwareemploi";24
+"grupo_fittest";"grupo-fittest";"softwareemploi";25
+"hrsmart";"hrsmart";"softwareemploi";26
+"human_sourcing";"human-sourcing";"softwareemploi";27
+"icims";"icims";"softwareemploi";28
+"impleo";"impleo";"softwareemploi";29
+"intuition_software";"intuition-software";"softwareemploi";30
+"job_explorer";"job-explorer";"softwareemploi";31
+"jobaffinity";"jobaffinity";"softwareemploi";32
+"jobexplorer";"jobexplorer";"softwareemploi";33
+"jobmeup";"jobmeup";"softwareemploi";34
+"jobplus";"jobplus";"softwareemploi";35
+"jobscience";"jobscience";"softwareemploi";36
+"kenexa";"kenexa";"softwareemploi";37
+"koltech_talentprofiler";"koltech-talentprofiler";"softwareemploi";38
+"lever";"lever";"softwareemploi";39
+"logiciel_perso";"logiciel-perso";"softwareemploi";40
+"louis_21";"louis-21";"softwareemploi";41
+"luceo_profilsoft";"luceo-profilsoft";"softwareemploi";42
+"lumesse";"lumesse";"softwareemploi";43
+"m_technology";"m-technology";"softwareemploi";44
+"monster";"monster";"softwareemploi";45
+"morpheus";"morpheus";"softwareemploi";46
+"multiposting_ats";"multiposting-ats";"softwareemploi";47
+"mysourcing";"mysourcing";"softwareemploi";48
+"nikita";"nikita";"softwareemploi";49
+"novrh";"novrh";"softwareemploi";50
+"onearagon";"onearagon";"softwareemploi";51
+"oracle";"oracle";"softwareemploi";52
+"otys";"otys";"softwareemploi";53
+"peoplesoft";"peoplesoft";"softwareemploi";54
+"pleiades";"pleiades";"softwareemploi";55
+"presencesoft";"presencesoft";"softwareemploi";56
+"profilsoft";"profilsoft";"softwareemploi";57
+"psideo";"psideo";"softwareemploi";58
+"relation_rh";"relation-rh";"softwareemploi";59
+"rhprofiler";"rhprofiler";"softwareemploi";60
+"salesforce";"salesforce";"softwareemploi";61
+"sap_e_recruiting";"sap-e-recruiting";"softwareemploi";62
+"sap_successfactors";"sap-successfactors";"softwareemploi";63
+"scoringline";"scoringline";"softwareemploi";64
+"sibelga";"sibelga";"softwareemploi";65
+"silkroad";"silkroad";"softwareemploi";66
+"successfactors_sap";"successfactors-sap";"softwareemploi";67
+"systalians";"systalians";"softwareemploi";68
+"talent_stream_recruit";"talent-stream-recruit";"softwareemploi";69
+"talentdetection";"talentdetection";"softwareemploi";70
+"talentfinder";"talentfinder";"softwareemploi";71
+"talentia";"talentia";"softwareemploi";72
+"talentlink";"talentlink";"softwareemploi";73
+"talentplug_ats";"talentplug-ats";"softwareemploi";74
+"talentsoft";"talentsoft";"softwareemploi";75
+"taleo";"taleo";"softwareemploi";76
+"technomedia";"technomedia";"softwareemploi";77
+"tms_monster";"tms-monster";"softwareemploi";78
+"tomorhow_com_ats";"tomorhow.com-ats";"softwareemploi";79
+"tool4staffing";"tool4staffing";"softwareemploi";80
+"trace_group";"trace-group";"softwareemploi";81
+"unatrix";"unatrix";"softwareemploi";82
+"vocation_city";"vocation-city";"softwareemploi";83
+"welcome_kit";"welcome-kit";"softwareemploi";84
+"workable";"workable";"softwareemploi";85
+"workday";"workday";"softwareemploi";86
+"zenploy";"zenploy";"softwareemploi";87
+10;10;"rangeimmobilierneuf";0
+15;15;"rangeimmobilierneuf";1
+25;25;"rangeimmobilierneuf";2
+50;50;"rangeimmobilierneuf";3
+75;75;"rangeimmobilierneuf";4
+100;100;"rangeimmobilierneuf";5
+125;125;"rangeimmobilierneuf";6
+150;150;"rangeimmobilierneuf";7
+200;200;"rangeimmobilierneuf";8
+250;250;"rangeimmobilierneuf";9
+300;300;"rangeimmobilierneuf";10
+400;400;"rangeimmobilierneuf";11
+500;500;"rangeimmobilierneuf";12
+600;600;"rangeimmobilierneuf";13
+700;700;"rangeimmobilierneuf";14
+800;800;"rangeimmobilierneuf";15
+900;900;"rangeimmobilierneuf";16
+1000;1000;"rangeimmobilierneuf";17
+1100;1100;"rangeimmobilierneuf";18
+1200;1200;"rangeimmobilierneuf";19
+1300;1300;"rangeimmobilierneuf";20
+1400;1400;"rangeimmobilierneuf";21
+1500;1500;"rangeimmobilierneuf";22
+1600;1600;"rangeimmobilierneuf";23
+1700;1700;"rangeimmobilierneuf";24
+1800;1800;"rangeimmobilierneuf";25
+1900;1900;"rangeimmobilierneuf";26
+2000;2000;"rangeimmobilierneuf";27
+"volume";"Volume";"rangeimmobilierneuf";28
+10;10;"rangeimmobilierancien";0
+15;15;"rangeimmobilierancien";1
+25;25;"rangeimmobilierancien";2
+50;50;"rangeimmobilierancien";3
+75;75;"rangeimmobilierancien";4
+100;100;"rangeimmobilierancien";5
+125;125;"rangeimmobilierancien";6
+150;150;"rangeimmobilierancien";7
+200;200;"rangeimmobilierancien";8
+250;250;"rangeimmobilierancien";9
+300;300;"rangeimmobilierancien";10
+400;400;"rangeimmobilierancien";11
+500;500;"rangeimmobilierancien";12
+600;600;"rangeimmobilierancien";13
+700;700;"rangeimmobilierancien";14
+800;800;"rangeimmobilierancien";15
+900;900;"rangeimmobilierancien";16
+1000;1000;"rangeimmobilierancien";17
+1100;1100;"rangeimmobilierancien";18
+1200;1200;"rangeimmobilierancien";19
+1300;1300;"rangeimmobilierancien";20
+1400;1400;"rangeimmobilierancien";21
+1500;1500;"rangeimmobilierancien";22
+1600;1600;"rangeimmobilierancien";23
+1700;1700;"rangeimmobilierancien";24
+1800;1800;"rangeimmobilierancien";25
+1900;1900;"rangeimmobilierancien";26
+2000;2000;"rangeimmobilierancien";27
+"volume";"Volume";"rangeimmobilierancien";28
+"prelevement";"Prélèvement";"paymentmode";0
+"virement";"Virement";"paymentmode";1
+"cheque";"Chèque";"paymentmode";2
+"virementpermanent";"Virement Permanent";"paymentmode";3
+"30j";"30 jours date de facture";"paymentdelay";0
+"60j";"60 jours date de facture";"paymentdelay";1
+"avance";"Paiement d'avance";"paymentdelay";2
+"oneshot";"One Shot";"billingtype";0
+"mensuelle";"Mensuelle";"billingtype";1
+20;20;"rangeautomobile";0
+35;35;"rangeautomobile";1
+50;50;"rangeautomobile";2
+75;75;"rangeautomobile";3
+100;100;"rangeautomobile";4
+125;125;"rangeautomobile";5
+150;150;"rangeautomobile";6
+200;200;"rangeautomobile";7
+250;250;"rangeautomobile";8
+300;300;"rangeautomobile";9
+350;350;"rangeautomobile";10
+400;400;"rangeautomobile";11
+450;450;"rangeautomobile";12
+500;500;"rangeautomobile";13
+800;800;"rangeautomobile";14
+"volume";"Volume";"rangeautomobile";15
+1;1;"rangeemploi";0
+3;3;"rangeemploi";1
+5;5;"rangeemploi";2
+10;10;"rangeemploi";3
+15;15;"rangeemploi";4
+20;20;"rangeemploi";5
+30;30;"rangeemploi";6
+40;40;"rangeemploi";7
+50;50;"rangeemploi";8
+75;75;"rangeemploi";9
+100;100;"rangeemploi";10
+"volume";"Volume";"rangeemploi";11
+1;1;"rangeemploicadre";0
+3;3;"rangeemploicadre";1
+5;5;"rangeemploicadre";2
+10;10;"rangeemploicadre";3
+15;15;"rangeemploicadre";4
+20;20;"rangeemploicadre";5
+30;30;"rangeemploicadre";6
+40;40;"rangeemploicadre";7
+50;50;"rangeemploicadre";8
+75;75;"rangeemploicadre";9
+100;100;"rangeemploicadre";10
+"volume";"Volume";"rangeemploicadre";11
+3;3;"rangeemploipae";0
+5;5;"rangeemploipae";1
+10;10;"rangeemploipae";2
+15;15;"rangeemploipae";3
+20;20;"rangeemploipae";4
+25;25;"rangeemploipae";5
+30;30;"rangeemploipae";6
+50;50;"rangeemploipae";7
+60;60;"rangeemploipae";8
+70;70;"rangeemploipae";9
+80;80;"rangeemploipae";10
+100;100;"rangeemploipae";11
+"volume";"Volume";"rangeemploipae";12
+1;1;"rangeemploipaetpe";0
+2;2;"rangeemploipaetpe";1
+4;4;"rangeemploipaetpe";2
+5;5;"rangecreditachete";0
+10;10;"rangecreditachete";1
+25;25;"rangecreditachete";2
+50;50;"rangecreditachete";3
+100;100;"rangecreditachete";4
+150;150;"rangecreditachete";5
+200;200;"rangecreditachete";6
+250;250;"rangecreditachete";7
+300;300;"rangecreditachete";8
+350;350;"rangecreditachete";9
+400;400;"rangecreditachete";10
+450;450;"rangecreditachete";11
+500;500;"rangecreditachete";12
+550;550;"rangecreditachete";13
+600;600;"rangecreditachete";14
+650;650;"rangecreditachete";15
+700;700;"rangecreditachete";16
+750;750;"rangecreditachete";17
+800;800;"rangecreditachete";18
+850;850;"rangecreditachete";19
+900;900;"rangecreditachete";20
+950;950;"rangecreditachete";21
+1000;1000;"rangecreditachete";22
+"volume";"Volume";"rangecreditachete";23
+5;5;"rangecreditoffert";0
+10;10;"rangecreditoffert";1
+25;25;"rangecreditoffert";2
+50;50;"rangecreditoffert";3
+100;100;"rangecreditoffert";4
+150;150;"rangecreditoffert";5
+200;200;"rangecreditoffert";6
+250;250;"rangecreditoffert";7
+300;300;"rangecreditoffert";8
+350;350;"rangecreditoffert";9
+400;400;"rangecreditoffert";10
+450;450;"rangecreditoffert";11
+500;500;"rangecreditoffert";12
+550;550;"rangecreditoffert";13
+600;600;"rangecreditoffert";14
+650;650;"rangecreditoffert";15
+700;700;"rangecreditoffert";16
+750;750;"rangecreditoffert";17
+800;800;"rangecreditoffert";18
+850;850;"rangecreditoffert";19
+900;900;"rangecreditoffert";20
+950;950;"rangecreditoffert";21
+1000;1000;"rangecreditoffert";22
+"volume";"Volume";"rangecreditoffert";23
+"broadbean";"Broadbean";"broadcastpartner";0
+"talentplug";"TalentPlug";"broadcastpartner";1
+"morpheus";"Morpheus";"broadcastpartner";2
+"multiposting";"Multiposting";"broadcastpartner";3
+"standard";"Standard";"flowspecificity";0
+"selectif";"Sélectif";"flowspecificity";1
+"immobilier";"Immobilier";"market";0
+"automobile";"Automobile";"market";1
+"emploi";"Emploi";"market";2
+"moto";"Moto";"market";3
+"standard";"Standard";"typeoffre";0
+"reference";"Référence";"typeoffre";1
+"emploi";"EMPLOI";"rubric";0
+"immobilier";"IMMOBILIER";"rubric";1
+"loisir";"LOISIR";"rubric";2
+"maison";"MAISON";"rubric";3
+"materiel_professionnel";"MATERIEL PROFESSIONNEL";"rubric";4
+"multimedia";"MULTIMÉDIA";"rubric";5
+"services";"SERVICES";"rubric";6
+"vacances";"VACANCES";"rubric";7
+"vehicule";"VÉHICULE";"rubric";8
+0;0;"discountpro";0
+15;15;"discountpro";1
+20;20;"discountpro";2

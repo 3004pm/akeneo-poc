@@ -1,0 +1,2 @@
+username;first_name;last_name;email;password;catalog_default_locale;user_default_locale;catalog_default_scope;default_category_tree;roles;groups;enabled
+admin;John;Doe;admin@example.com;admin;fr_FR;fr_FR;leboncoin;master;ROLE_ADMINISTRATOR;IT support;1

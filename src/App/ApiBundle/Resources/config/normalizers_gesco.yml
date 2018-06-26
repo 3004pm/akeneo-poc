@@ -1,0 +1,46 @@
+services:
+    # Gesco product
+    app_api.normalizer.gesco.product.metric:
+        class: App\ApiBundle\Normalizer\Gesco\Product\MetricNormalizer
+        tags:
+            - { name: pim_serializer.normalizer, priority: 90 }
+
+    app_api.normalizer.gesco.product.family:
+        class: App\ApiBundle\Normalizer\Gesco\Product\FamilyNormalizer
+        tags:
+            - { name: pim_serializer.normalizer, priority: 90 }
+
+    app_api.normalizer.gesco.product.price:
+        class: App\ApiBundle\Normalizer\Gesco\Product\PriceNormalizer
+        tags:
+            - { name: pim_serializer.normalizer, priority: 90 }
+
+    app_api.normalizer.gesco.product.product_value:
+        class: App\ApiBundle\Normalizer\Gesco\Product\ProductValueNormalizer
+        tags:
+            - { name: pim_serializer.normalizer, priority: 90 }
+
+    app_api.normalizer.gesco.product.product_values:
+        class: App\ApiBundle\Normalizer\Gesco\Product\ProductValuesNormalizer
+        tags:
+            - { name: pim_serializer.normalizer, priority: 90 }
+
+    app_api.normalizer.gesco.product.properties:
+        class: App\ApiBundle\Normalizer\Gesco\Product\PropertiesNormalizer
+        arguments:
+            - '@pim_catalog.filter.chained'
+        tags:
+            - { name: pim_serializer.normalizer, priority: 40 }
+
+    # Gesco
+    app_api.normalizer.gesco.product:
+        class: App\ApiBundle\Normalizer\Gesco\ProductNormalizer
+        arguments:
+            - '@app_api.normalizer.gesco.product.properties'
+        tags:
+            - { name: pim_serializer.normalizer, priority: 90 }
+
+    app_api.normalizer.gesco.datetime:
+        class: App\ApiBundle\Normalizer\Gesco\DateTimeNormalizer
+        tags:
+            - { name: pim_serializer.normalizer, priority: 90 }

@@ -1,4 +1,4 @@
-app_api_product_get_full:
-    path: /app_products/full/{code}
-    defaults: { _controller: app_api.controller.product:getFullAction, _format: json }
+app_api_product_gesco_get:
+    path: /gesco/products/{code}/{locale}
+    defaults: { _controller: app_api.controller.product:getGescoAction, _format: json, locale: fr_FR }
     methods: [GET]

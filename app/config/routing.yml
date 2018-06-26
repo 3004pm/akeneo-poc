@@ -1,3 +1,7 @@
+app_api:
+    resource: "@AppApiBundle/Resources/config/routing.yml"
+    prefix:   /api
+
 # PIM
 pim_analytics:
     resource: "@PimAnalyticsBundle/Resources/config/routing.yml"

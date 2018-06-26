@@ -1,0 +1,4 @@
+app_api_product_get_full:
+    path: /app_products/full/{code}
+    defaults: { _controller: app_api.controller.product:getFullAction, _format: json }
+    methods: [GET]

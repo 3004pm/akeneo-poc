@@ -1,0 +1,3 @@
+app_product:
+    resource: '@AppApiBundle/Resources/config/routing/product.yml'
+    prefix: /rest/v1

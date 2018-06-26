@@ -1,0 +1,4 @@
+services:
+    app_api.controller.product:
+        parent: pim_api.controller.product
+        class:  App\ApiBundle\Controller\ProductController

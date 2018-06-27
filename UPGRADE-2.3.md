@@ -19,6 +19,8 @@
 
 ## Migrate your standard project
 
+/!\ Before starting the migration process, we advise you to stop the job queue consumer daemon and start it again only when the migration process is finished.
+
 1. Download it from the website [PIM community standard](http://www.akeneo.com/download/) and extract:
 
     ```bash
@@ -41,6 +43,9 @@
     mv $PIM_DIR/app/config/parameters.yml.dist $PIM_DIR/app/config/parameters.yml.dist.bak
     cp app/config/parameters.yml.dist $PIM_DIR/app/config
 
+    mv $PIM_DIR/app/config/routing.yml $PIM_DIR/app/config/routing.yml.bak
+    cp app/config/routing.yml $PIM_DIR/app/config
+
     mv $PIM_DIR/composer.json $PIM_DIR/composer.json.bak
     cp composer.json $PIM_DIR/
     ```
@@ -62,8 +67,19 @@
        "your/other-dependency": "version",
     }
     ```
+5. Register PimCatalogVolumeMonitoringBundle in the AppKernel.php :
 
-5. Run a composer update:
+    ```php
+    protected function getPimBundles()
+    {
+        return [
+            ...
+            new Pim\Bundle\CatalogVolumeMonitoringBundle\PimCatalogVolumeMonitoringBundle(),
+        ];
+    }
+    ```
+    
+6. Run a composer update:
 
    Then run the command to update your dependencies:
 
@@ -76,24 +92,24 @@
     If you have custom code in your project, this step may raise errors in the "post-script" command.
     In this case, go to the chapter "Migrate your custom code" before running the database migration.
 
-6. Migrate your database:
+7. Migrate your database:
 
     ```bash
     rm -rf var/cache
     bin/console doctrine:migration:migrate --env=prod
     ```
 
-7. Then re-generate the PIM assets:
+8. Then re-generate the PIM assets:
 
     ```bash
     bin/console pim:installer:assets --symlink --clean --env=prod
     yarn run webpack
     ```
 
-8. Add the new cron in your crontab:
+9. Add the new cron in your crontab:
     ```cron
     0 22  *    *    *    php /path/to/installation/pim-community-standard/bin/console pim:volume:aggregate --env=prod > /path/to/installation/pim-community-standard/var/logs/volume_aggregate.log 2>&1
     ```
 
-8. After all those steps, it's possible that your OPCache is out of date. So remember to restart your php-fpm daemon or apache.
+10. After all those steps, it's possible that your OPCache is out of date. So remember to restart your php-fpm daemon or apache.
 

@@ -1,2 +1,10 @@
 code;label-fr_FR;parent
 master;Verticale;
+packimmo;Pack Immo;master
+packauto;Pack Auto;master
+pir;Pack Immo Référence;packimmo
+pin;Pack Immo Neuf;packimmo
+pit;Pack Immo Test;packimmo
+par;Pack Auto Référence;packauto
+pan;Pack Auto Neuf;packauto
+pat;Pack Auto Test;packauto

@@ -1,0 +1,15 @@
+services:
+    app_api.repository.category:
+        class: App\ApiBundle\Doctrine\Repository\CategoryRepository
+        arguments:
+            - '@pim_api.repository.category'
+
+    app_api.repository.product:
+        class: App\ApiBundle\Doctrine\Repository\ProductRepository
+        arguments:
+            - '@pim_api.repository.product'
+
+    app_api.repository.product_model:
+        class: App\ApiBundle\Doctrine\Repository\ProductModelRepository
+        arguments:
+            - '@pim_catalog.repository.product_model'

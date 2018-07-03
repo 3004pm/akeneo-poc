@@ -5,11 +5,6 @@ services:
         tags:
             - { name: pim_serializer.normalizer, priority: 90 }
 
-    app_api.normalizer.gesco.product.family:
-        class: App\ApiBundle\Normalizer\Gesco\Product\FamilyNormalizer
-        tags:
-            - { name: pim_serializer.normalizer, priority: 90 }
-
     app_api.normalizer.gesco.product.price:
         class: App\ApiBundle\Normalizer\Gesco\Product\PriceNormalizer
         tags:
@@ -29,18 +24,34 @@ services:
         class: App\ApiBundle\Normalizer\Gesco\Product\PropertiesNormalizer
         arguments:
             - '@pim_catalog.filter.chained'
+            - '@app_api.normalizer.gesco.family'
         tags:
             - { name: pim_serializer.normalizer, priority: 40 }
 
     # Gesco
+    app_api.normalizer.gesco.category:
+        class: App\ApiBundle\Normalizer\Gesco\CategoryNormalizer
+        arguments:
+            - '@app_api.repository.product'
+            - '@app_api.repository.product_model'
+            - '@akeneo_storage_utils.doctrine.object_detacher'
+
+    app_api.normalizer.gesco.family:
+        class: App\ApiBundle\Normalizer\Gesco\FamilyNormalizer
+
+    app_api.normalizer.gesco.datetime:
+        class: App\ApiBundle\Normalizer\Gesco\DateTimeNormalizer
+        tags:
+            - { name: pim_serializer.normalizer, priority: 90 }
+
+    app_api.normalizer.gesco.product_model:
+        class: App\ApiBundle\Normalizer\Gesco\ProductModelNormalizer
+        arguments:
+            - '@app_api.normalizer.gesco.family'
+
     app_api.normalizer.gesco.product:
         class: App\ApiBundle\Normalizer\Gesco\ProductNormalizer
         arguments:
             - '@app_api.normalizer.gesco.product.properties'
-        tags:
-            - { name: pim_serializer.normalizer, priority: 90 }
-
-    app_api.normalizer.gesco.datetime:
-        class: App\ApiBundle\Normalizer\Gesco\DateTimeNormalizer
         tags:
             - { name: pim_serializer.normalizer, priority: 90 }

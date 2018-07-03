@@ -1,2 +1,7 @@
 code;family;label-fr_FR;variant-axes_1;variant-attributes_1
-variantpirvolume;packimmoreference;"Pack Immo Référence - Variation Volume";rangeimmobilierancien;sku,unitpriceht,avalmonthprice,rangeimmobilierancien
+variantpirvolume;pir;"Pack Immo Référence - Variation Volume";rangeimmobilierancien;sku,unitpriceht,avalmonthprice,rangeimmobilierancien
+variantpinvolume;pin;"Pack Immo Neuf - Variation Volume";rangeimmobilierancien;sku,unitpriceht,avalmonthprice,rangeimmobilierancien
+variantpitvolume;pit;"Pack Immo Test - Variation Volume";rangeimmobilierancien;sku,unitpriceht,avalmonthprice,rangeimmobilierancien
+variantparvolume;par;"Pack Auto Référence - Variation Volume";rangeimmobilierancien;sku,unitpriceht,avalmonthprice,rangeimmobilierancien
+variantpanvolume;pan;"Pack Auto Neuf - Variation Volume";rangeimmobilierancien;sku,unitpriceht,avalmonthprice,rangeimmobilierancien
+variantpatvolume;pat;"Pack Auto Test - Variation Volume";rangeimmobilierancien;sku,unitpriceht,avalmonthprice,rangeimmobilierancien

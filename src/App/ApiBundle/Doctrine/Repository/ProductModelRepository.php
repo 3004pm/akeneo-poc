@@ -39,15 +39,19 @@ class ProductModelRepository
 
         return $queryBuilder
             ->leftJoin('pm.categories', 'categories')
-            ->where($queryBuilder->expr()->andX(
-                $queryBuilder->expr()->eq('categories', ':categoryId')
-            ))
+            ->where(
+                $queryBuilder->expr()->andX(
+                    $queryBuilder->expr()->eq('categories', ':categoryId')
+                )
+            )
             ->setParameter('categoryId', $categoryId)
             ->getQuery()
             ->execute();
     }
 
     /**
+     * Retrieve query builder from entity repository.
+     *
      * @param string $alias The table alias.
      *
      * @return QueryBuilder

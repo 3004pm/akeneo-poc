@@ -1,5 +1,10 @@
 services:
     # Gesco product
+    app_api.normalizer.gesco.product.associations:
+        class: App\ApiBundle\Normalizer\Gesco\Product\AssociationsNormalizer
+        calls:
+            - [ setNormalizer, ['@pim_serializer'] ]
+
     app_api.normalizer.gesco.product.metric:
         class: App\ApiBundle\Normalizer\Gesco\Product\MetricNormalizer
         tags:
@@ -53,5 +58,6 @@ services:
         class: App\ApiBundle\Normalizer\Gesco\ProductNormalizer
         arguments:
             - '@app_api.normalizer.gesco.product.properties'
+            - '@app_api.normalizer.gesco.product.associations'
         tags:
             - { name: pim_serializer.normalizer, priority: 90 }

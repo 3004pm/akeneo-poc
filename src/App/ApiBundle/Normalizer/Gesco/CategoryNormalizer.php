@@ -44,9 +44,9 @@ class CategoryNormalizer
     /**
      * Normalize product data from root category.
      *
-     * @param CategoryInterface $category
-     * @param null              $format
-     * @param array             $context
+     * @param CategoryInterface $category The category where product come from.
+     * @param string|null       $format   The normalizer format.
+     * @param array             $context  The context of normalization.
      *
      * @return array
      */
@@ -70,7 +70,9 @@ class CategoryNormalizer
     }
 
     /**
-     * @param CategoryInterface $category
+     * Retrieve non variant product data from the given category.
+     *
+     * @param CategoryInterface $category The category to retrieve non variant product data.
      *
      * @return array
      */
@@ -93,7 +95,9 @@ class CategoryNormalizer
     }
 
     /**
-     * @param CategoryInterface $category
+     * Retrieve product model data from the given category.
+     *
+     * @param CategoryInterface $category The category to retrieve non variant product data.
      *
      * @return array
      */

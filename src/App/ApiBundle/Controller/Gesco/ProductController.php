@@ -35,13 +35,23 @@ class ProductController
     /**
      * Get get product with family and attributes data.
      *
-     * @param string $code The product code.
-     * @param string $locale The needed locale.
+     * @param string      $code   The product code.
+     * @param string      $locale The needed locale.
+     * @param string|null $firstAxeCode
+     * @param string|null $firstAxeValue
+     * @param string|null $sndAxeCode
+     * @param string|null $sndAxeValue
      *
      * @return JsonResponse
      */
-    public function getAction(string $code, string $locale): JsonResponse
-    {
+    public function getAction(
+        string $code,
+        string $locale,
+        string $firstAxeCode = null,
+        string $firstAxeValue = null,
+        string $sndAxeCode = null,
+        string $sndAxeValue = null
+    ): JsonResponse {
         $pqb = $this->fromSizePqbFactory->create(['limit' => 1, 'from' => 0]);
         $pqb->addFilter('identifier', Operators::EQUALS, $code);
         $products = $pqb->execute();
@@ -51,7 +61,17 @@ class ProductController
         }
 
         return new JsonResponse(
-            $this->normalizer->normalize($products->current(), 'gesco', ['locale' => $locale])
+            $this->normalizer->normalize(
+                $products->current(),
+                'gesco',
+                [
+                    'locale'        => $locale,
+                    'firstAxeCode'  => $firstAxeCode,
+                    'firstAxeValue' => $firstAxeValue,
+                    'sndAxeCode'    => $sndAxeCode,
+                    'sndAxeValue'   => $sndAxeValue,
+                ]
+            )
         );
     }
 }

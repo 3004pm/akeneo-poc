@@ -26,14 +26,14 @@ class ProductModelController
      * ProductModelController constructor.
      *
      * @param ProductModelRepository $productModelRepository
-     * @param ProductModelNormalizer       $productModelNormalizer
+     * @param ProductModelNormalizer $productModelNormalizer
      */
     public function __construct(
         ProductModelRepository $productModelRepository,
         ProductModelNormalizer $productModelNormalizer
     ) {
         $this->productModelRepository = $productModelRepository;
-        $this->productModelNormalizer       = $productModelNormalizer;
+        $this->productModelNormalizer = $productModelNormalizer;
     }
 
     /**

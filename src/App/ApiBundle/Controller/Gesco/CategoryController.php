@@ -38,8 +38,8 @@ class CategoryController
     /**
      * List all products.
      *
-     * @param string $code
-     * @param string $locale
+     * @param string $code   The root category code.
+     * @param string $locale The locale of normalize label.
      *
      * @AclAncestor("pim_api_category_list")
      *

@@ -13,17 +13,26 @@ use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
  */
 class ProductNormalizer implements NormalizerInterface
 {
+    private const FIELD_ASSOCIATIONS = 'associations';
+
     /** @var NormalizerInterface */
     protected $propertiesNormalizer;
+
+    /** @var NormalizerInterface */
+    protected $associationsNormalizer;
 
     /**
      * ProductNormalizer constructor.
      *
      * @param NormalizerInterface $propertiesNormalizer
+     * @param NormalizerInterface $associationsNormalizer
      */
-    public function __construct(NormalizerInterface $propertiesNormalizer)
-    {
+    public function __construct(
+        NormalizerInterface $propertiesNormalizer,
+        NormalizerInterface $associationsNormalizer
+    ) {
         $this->propertiesNormalizer = $propertiesNormalizer;
+        $this->associationsNormalizer = $associationsNormalizer;
     }
 
     /**
@@ -31,7 +40,15 @@ class ProductNormalizer implements NormalizerInterface
      */
     public function normalize($product, $format = null, array $context = [])
     {
-        return $this->propertiesNormalizer->normalize($product, $format, $context);
+        $data = $this->propertiesNormalizer->normalize($product, $format, $context);
+
+        if (!isset($context['isAssociation']) || false === $context['isAssociation']) {
+            $context['isAssociation'] = true;
+            $associatedData = $this->associationsNormalizer->normalize($product, $format, $context);
+            $data[self::FIELD_ASSOCIATIONS] = $associatedData;
+        }
+
+        return $data;
     }
 
     /**

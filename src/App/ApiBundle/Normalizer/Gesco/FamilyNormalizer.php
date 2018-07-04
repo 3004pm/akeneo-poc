@@ -17,13 +17,15 @@ use Pim\Component\Catalog\Model\FamilyInterface;
 class FamilyNormalizer
 {
     /**
-     * @param FamilyInterface $family
-     * @param null            $format
-     * @param array           $context
+     * {@inheritdoc}
+     *
+     * @param FamilyInterface $family  The family to normalize.
+     * @param string|null     $format  The normalizer format.
+     * @param array           $context The context of normalization.
      *
      * @return array
      */
-    public function normalize($family, $format = null, array $context = []): array
+    public function normalize($family, string $format = null, array $context = []): array
     {
         return [
             'code'  => $family->getCode(),
@@ -32,8 +34,10 @@ class FamilyNormalizer
     }
 
     /**
-     * @param FamilyInterface $family
-     * @param array           $context
+     * Retrieve normalized grouped attributes.
+     *
+     * @param FamilyInterface $family  The family where to retrieve grouped attributes.
+     * @param array           $context The context of normalization.
      *
      * @return array
      */
@@ -50,8 +54,10 @@ class FamilyNormalizer
     }
 
     /**
-     * @param AttributeInterface[] $attributes
-     * @param array                $context
+     * Retrieve normalized attributes
+     *
+     * @param AttributeInterface[] $attributes The attributes to normalize.
+     * @param array                $context    The context of normalization.
      *
      * @return array
      */
@@ -80,8 +86,10 @@ class FamilyNormalizer
     }
 
     /**
-     * @param ArrayAccess $attributeOptions
-     * @param array       $context
+     * Retrieve normalized attribute options.
+     *
+     * @param ArrayAccess $attributeOptions The attribute options to normalize.
+     * @param array       $context          The context of normalization.
      *
      * @return array
      */

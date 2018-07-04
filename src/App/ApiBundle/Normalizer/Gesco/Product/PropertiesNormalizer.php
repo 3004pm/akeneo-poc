@@ -38,6 +38,8 @@ class PropertiesNormalizer extends ParentNormalizer
     }
 
     /**
+     * {@inheritdoc}
+     *
      * @param ProductInterface $product
      * @param null             $format
      * @param array            $context

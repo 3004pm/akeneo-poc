@@ -71,6 +71,8 @@ class CategoryRepository
     }
 
     /**
+     * Retrieve query builder from entity repository.
+     *
      * @param string $alias The table alias.
      *
      * @return QueryBuilder

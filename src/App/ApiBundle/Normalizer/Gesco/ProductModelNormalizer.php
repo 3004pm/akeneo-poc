@@ -31,13 +31,13 @@ class ProductModelNormalizer
     /**
      * Normalize product model into format for gesco.
      *
-     * @param ProductModelInterface $productModel
-     * @param null                  $format
-     * @param array                 $context
+     * @param ProductModelInterface $productModel The product model where to retrieve data.
+     * @param string|null           $format       The normalizer format.
+     * @param array                 $context      The context of normalization.
      *
      * @return array
      */
-    public function normalize(ProductModelInterface $productModel, $format = null, array $context = []): array
+    public function normalize(ProductModelInterface $productModel, string $format = null, array $context = []): array
     {
         return [
             'identifier'  => $productModel->getLabel($context['locale'], null),
@@ -48,8 +48,10 @@ class ProductModelNormalizer
     }
 
     /**
-     * @param ProductModelInterface $productModel
-     * @param string                $locale
+     * Normalize family data.
+     *
+     * @param ProductModelInterface $productModel The product model where to retrieve family model.
+     * @param string                $locale       The locale of normalize label.
      *
      * @return array
      */
@@ -67,7 +69,9 @@ class ProductModelNormalizer
     }
 
     /**
-     * @param ProductModelInterface $productModel
+     * Retrieve product variation axe data.
+     *
+     * @param ProductModelInterface $productModel The product model of needed varation axe  data.
      *
      * @return array
      */
@@ -97,7 +101,9 @@ class ProductModelNormalizer
     }
 
     /**
-     * @param ProductModelInterface $productModel
+     * Retrieve axe attribute codes to normalize.
+     *
+     * @param ProductModelInterface $productModel The product model of attribute axe codes.
      *
      * @return array
      */

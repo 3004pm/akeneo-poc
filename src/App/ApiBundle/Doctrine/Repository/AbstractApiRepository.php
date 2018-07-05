@@ -27,7 +27,7 @@ abstract class AbstractApiRepository
      *
      * @return QueryBuilder
      */
-    protected function getQueryBuilder(string $alias = null): QueryBuilder
+    protected function getQueryBuilder(string $alias): QueryBuilder
     {
         return $this->repository->createQueryBuilder($alias);
     }

@@ -20,7 +20,7 @@ class ProductRepository extends AbstractApiRepository
      */
     public function findNonVariantProductByAllCategories(array $categoryIds): array
     {
-        $queryBuilder = $this->getQueryBuilder();
+        $queryBuilder = $this->getQueryBuilder('p');
 
         foreach ($categoryIds as $id) {
             $queryBuilder->leftJoin('p.categories', sprintf('categories%s', reset($id)));

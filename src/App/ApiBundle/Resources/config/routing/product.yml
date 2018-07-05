@@ -1,14 +1,14 @@
 app_api_gesco_product_get:
-    path: /gesco/products/{code}/{locale}
-    defaults: { _controller: app_api.controller.gesco.product:getAction, _format: json, locale: fr_FR}
+    path: /gesco/products/{code}
+    defaults: { _controller: app_api.controller.gesco.product:getAction, _format: json}
     methods: [GET]
 
 app_api_gesco_product_get_one_axe:
-    path: /gesco/products/{code}/{locale}/{firstAxeCode}/{firstAxeValue}
-    defaults: { _controller: app_api.controller.gesco.product:getAction, _format: json, locale: fr_FR}
+    path: /gesco/products/{code}/{firstAxeCode}/{firstAxeValue}
+    defaults: { _controller: app_api.controller.gesco.product:getAction, _format: json}
     methods: [GET]
 
 app_api_gesco_product_get_two_axe:
-    path: /gesco/products/{code}/{locale}/{firstAxeCode}/{firstAxeValue}/{sndAxeCode}/{sndAxeValue}
-    defaults: { _controller: app_api.controller.gesco.product:getAction, _format: json, locale: fr_FR}
+    path: /gesco/products/{code}/{firstAxeCode}/{firstAxeValue}/{sndAxeCode}/{sndAxeValue}
+    defaults: { _controller: app_api.controller.gesco.product:getAction, _format: json}
     methods: [GET]

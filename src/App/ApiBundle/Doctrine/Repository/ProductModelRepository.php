@@ -2,62 +2,38 @@
 
 namespace App\ApiBundle\Doctrine\Repository;
 
-use Doctrine\ORM\EntityRepository;
-use Doctrine\ORM\QueryBuilder;
-
 /**
  * Class ProductModelRepository.
  *
  * @package    App\ApiBundle\Doctrine\Repository
  * @author     Jessy JURKOWSKI <jessy.jurkowski@cgi.com>
  */
-class ProductModelRepository
+class ProductModelRepository extends AbstractApiRepository
 {
-    /** @var EntityRepository */
-    protected $repository;
-
     /**
-     * EntityRepository constructor.
+     * Retrieve product model owned by categories.
+     * Many left join were done to check all given categories.
      *
-     * @param EntityRepository $repository
-     */
-    public function __construct(EntityRepository $repository)
-    {
-        $this->repository = $repository;
-    }
-
-    /**
-     * Retrieve variant product owned by category.
-     *
-     * @param int $categoryId
+     * @param array $categoryIds the category ids.
      *
      * @return array
      */
-    public function findByCategory(int $categoryId): array
+    public function findByAllCategoryIds(array $categoryIds): array
     {
-        $queryBuilder = $this->getQueryBuilder();
+        $queryBuilder = $this->getQueryBuilder('pm');
+
+        foreach ($categoryIds as $id) {
+            $queryBuilder->leftJoin('pm.categories', sprintf('categories%s', reset($id)));
+        }
+
+        foreach ($categoryIds as $id) {
+            $queryBuilder->andWhere(
+                $queryBuilder->expr()->in(sprintf('categories%s', reset($id)), $id)
+            );
+        }
 
         return $queryBuilder
-            ->leftJoin('pm.categories', 'categories')
-            ->where(
-                $queryBuilder->expr()->andX(
-                    $queryBuilder->expr()->eq('categories', ':categoryId')
-                )
-            )
-            ->setParameter('categoryId', $categoryId)
             ->getQuery()
             ->execute();
-    }
-
-    /**
-     * Retrieve query builder from entity repository.
-     *
-     * @param string $alias The table alias.
-     *
-     * @return QueryBuilder
-     */
-    protected function getQueryBuilder(string $alias = 'pm'): QueryBuilder
-    {
-        return $this->repository->createQueryBuilder($alias);
     }
 }

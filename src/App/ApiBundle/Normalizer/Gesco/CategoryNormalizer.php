@@ -3,6 +3,7 @@
 namespace App\ApiBundle\Normalizer\Gesco;
 
 use Akeneo\Bundle\StorageUtilsBundle\Doctrine\Common\Detacher\ObjectDetacher;
+use App\ApiBundle\Doctrine\Repository\CategoryRepository;
 use App\ApiBundle\Doctrine\Repository\ProductModelRepository;
 use App\ApiBundle\Doctrine\Repository\ProductRepository;
 use Pim\Component\Catalog\Model\CategoryInterface;
@@ -17,6 +18,10 @@ use Pim\Component\Catalog\Model\ProductModelInterface;
  */
 class CategoryNormalizer
 {
+    private const CATEGORY_CODES_SEPARATOR = ',';
+
+    /** @var CategoryRepository */
+    protected $categoryRepository;
     /** @var ProductRepository */
     protected $productRepository;
     /** @var ProductModelRepository */
@@ -27,22 +32,25 @@ class CategoryNormalizer
     /**
      * CategoryController constructor.
      *
+     * @param CategoryRepository     $categoryRepository
      * @param ProductRepository      $productRepository
      * @param ProductModelRepository $productModelRepository
      * @param ObjectDetacher         $objectDetacher
      */
     public function __construct(
+        CategoryRepository $categoryRepository,
         ProductRepository $productRepository,
         ProductModelRepository $productModelRepository,
         ObjectDetacher $objectDetacher
     ) {
+        $this->categoryRepository     = $categoryRepository;
         $this->productRepository      = $productRepository;
         $this->productModelRepository = $productModelRepository;
         $this->objectDetacher         = $objectDetacher;
     }
 
     /**
-     * Normalize product data from root category.
+     * Normalize product liste for gesco.
      *
      * @param CategoryInterface $category The category where product come from.
      * @param string|null       $format   The normalizer format.
@@ -50,18 +58,22 @@ class CategoryNormalizer
      *
      * @return array
      */
-    public function normalizeProductsData($category, $format = null, array $context = []): array
+    public function normalizeProductsList(CategoryInterface $category, $format = null, array $context = []): array
     {
         $data = [];
 
+        $categoryCodes = explode(self::CATEGORY_CODES_SEPARATOR, $context['categoryCodes']);
+
         /** @var CategoryInterface $childCategory */
         foreach ($category->getChildren() as $childCategory) {
+            $allCategoryCodes = \array_merge($categoryCodes, [$childCategory->getCode()]);
+
             $data[$childCategory->getId()] = [
                 'categoryCode'  => $childCategory->getCode(),
                 'categoryLabel' => (string)$childCategory->setLocale($context['locale']),
                 'products'      => array_merge(
-                    $this->getNonVariantProductData($childCategory),
-                    $this->getProductModelData($childCategory)
+                    $this->getNonVariantProductData($allCategoryCodes),
+                    $this->getProductModelData($allCategoryCodes)
                 ),
             ];
         }
@@ -72,13 +84,14 @@ class CategoryNormalizer
     /**
      * Retrieve non variant product data from the given category.
      *
-     * @param CategoryInterface $category The category to retrieve non variant product data.
+     * @param array $categoryCodes The category codes owned by products.
      *
      * @return array
      */
-    protected function getNonVariantProductData(CategoryInterface $category): array
+    protected function getNonVariantProductData(array $categoryCodes): array
     {
-        $products     = $this->productRepository->findNonVariantProductByCategory($category->getId());
+        $categoryIds  = $this->categoryRepository->findIdsByCodes($categoryCodes);
+        $products     = $this->productRepository->findNonVariantProductByAllCategories($categoryIds);
         $productsData = [];
 
         /** @var ProductInterface $product */
@@ -95,15 +108,16 @@ class CategoryNormalizer
     }
 
     /**
-     * Retrieve product model data from the given category.
+     * Retrieve product model data contains in all the given categories.
      *
-     * @param CategoryInterface $category The category to retrieve non variant product data.
+     * @param array $categoryCodes
      *
      * @return array
      */
-    protected function getProductModelData(CategoryInterface $category): array
+    protected function getProductModelData(array $categoryCodes): array
     {
-        $productModels     = $this->productModelRepository->findByCategory($category->getId());
+        $categoryIds       = $this->categoryRepository->findIdsByCodes($categoryCodes);
+        $productModels     = $this->productModelRepository->findByAllCategoryIds($categoryIds);
         $productModelsData = [];
 
 

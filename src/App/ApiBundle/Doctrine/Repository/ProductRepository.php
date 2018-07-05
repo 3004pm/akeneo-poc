@@ -2,63 +2,39 @@
 
 namespace App\ApiBundle\Doctrine\Repository;
 
-use Doctrine\ORM\EntityRepository;
-use Doctrine\ORM\QueryBuilder;
-
 /**
  * Class ProductRepository.
  *
  * @package    App\ApiBundle\Doctrine\Repository
  * @author     Jessy JURKOWSKI <jessy.jurkowski@cgi.com>
  */
-class ProductRepository
+class ProductRepository extends AbstractApiRepository
 {
-    /** @var EntityRepository */
-    protected $repository;
-
     /**
-     * EntityRepository constructor.
+     * Retrieve non variant product owned by categories.
+     * Many left join were done to check all given categories.
      *
-     * @param EntityRepository $repository
-     */
-    public function __construct(EntityRepository $repository)
-    {
-        $this->repository = $repository;
-    }
-
-    /**
-     * Retrieve non variant product owned by category.
-     *
-     * @param int $categoryId the category id.
+     * @param array $categoryIds The category ids.
      *
      * @return array
      */
-    public function findNonVariantProductByCategory(int $categoryId): array
+    public function findNonVariantProductByAllCategories(array $categoryIds): array
     {
         $queryBuilder = $this->getQueryBuilder();
 
+        foreach ($categoryIds as $id) {
+            $queryBuilder->leftJoin('p.categories', sprintf('categories%s', reset($id)));
+        }
+
+        foreach ($categoryIds as $id) {
+            $queryBuilder->andWhere(
+                $queryBuilder->expr()->in(sprintf('categories%s', reset($id)), $id)
+            );
+        }
+
         return $queryBuilder
-            ->leftJoin('p.categories', 'categories')
-            ->where(
-                $queryBuilder->expr()->andX(
-                    $queryBuilder->expr()->isNull('p.familyVariant'),
-                    $queryBuilder->expr()->eq('categories', ':categoryId')
-                )
-            )
-            ->setParameter('categoryId', $categoryId)
+            ->andWhere($queryBuilder->expr()->isNull('p.familyVariant'))
             ->getQuery()
             ->execute();
-    }
-
-    /**
-     * Retrieve query builder from entity repository.
-     *
-     * @param string $alias The table alias.
-     *
-     * @return QueryBuilder
-     */
-    protected function getQueryBuilder(string $alias = 'p'): QueryBuilder
-    {
-        return $this->repository->createQueryBuilder($alias);
     }
 }

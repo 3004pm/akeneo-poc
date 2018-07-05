@@ -3,6 +3,8 @@
 namespace App\ApiBundle\Controller\Gesco;
 
 use App\ApiBundle\Doctrine\Repository\CategoryRepository;
+use App\ApiBundle\Helper\CategoryHelper;
+use App\ApiBundle\Helper\LocaleHelper;
 use App\ApiBundle\Normalizer\Gesco\CategoryNormalizer;
 use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -36,26 +38,31 @@ class CategoryController
     }
 
     /**
-     * List all products.
+     * List all products of vertical category and in categories field in parameters.
      *
-     * @param string $code   The root category code.
-     * @param string $locale The locale of normalize label.
+     * @param string $categoryCodes he category codes where the product have to be.
      *
      * @AclAncestor("pim_api_category_list")
      *
      * @return JsonResponse
      * @throws \Doctrine\ORM\NonUniqueResultException
      */
-    public function listProductsAction(string $code, string $locale): JsonResponse
+    public function listProductsAction(string $categoryCodes): JsonResponse
     {
-        $category = $this->categoryRepository->findRootCategoryByCode($code);
+        $category = $this->categoryRepository->findRootCategoryByCode(CategoryHelper::CATEGORY_LIST_PRODUCTS);
 
         if (null === $category) {
-            throw new NotFoundHttpException(sprintf('No root category found for code "%s".', $code));
+            throw new NotFoundHttpException(
+                sprintf('No root category found for code "%s".', CategoryHelper::CATEGORY_LIST_PRODUCTS)
+            );
         }
 
         return new JsonResponse(
-            $this->categoryNormalizer->normalizeProductsData($category, 'gesco', ['locale' => $locale])
+            $this->categoryNormalizer->normalizeProductsList(
+                $category,
+                'gesco',
+                ['locale' => LocaleHelper::DEFAULT_LOCALE, 'categoryCodes' => $categoryCodes]
+            )
         );
     }
 }

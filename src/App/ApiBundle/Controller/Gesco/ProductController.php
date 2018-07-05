@@ -2,6 +2,7 @@
 
 namespace App\ApiBundle\Controller\Gesco;
 
+use App\ApiBundle\Helper\LocaleHelper;
 use Pim\Component\Catalog\Query\Filter\Operators;
 use Pim\Component\Catalog\Query\ProductQueryBuilderFactoryInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -36,7 +37,6 @@ class ProductController
      * Get get product with family and attributes data.
      *
      * @param string      $code   The product code.
-     * @param string      $locale The needed locale.
      * @param string|null $firstAxeCode
      * @param string|null $firstAxeValue
      * @param string|null $sndAxeCode
@@ -46,7 +46,6 @@ class ProductController
      */
     public function getAction(
         string $code,
-        string $locale,
         string $firstAxeCode = null,
         string $firstAxeValue = null,
         string $sndAxeCode = null,
@@ -65,7 +64,7 @@ class ProductController
                 $products->current(),
                 'gesco',
                 [
-                    'locale'        => $locale,
+                    'locale'        => LocaleHelper::DEFAULT_LOCALE,
                     'firstAxeCode'  => $firstAxeCode,
                     'firstAxeValue' => $firstAxeValue,
                     'sndAxeCode'    => $sndAxeCode,

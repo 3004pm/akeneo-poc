@@ -2,6 +2,7 @@
 
 namespace App\ApiBundle\Controller\Gesco;
 
+use App\ApiBundle\Helper\LocaleHelper;
 use App\ApiBundle\Normalizer\Gesco\ProductModelNormalizer;
 use Pim\Bundle\CatalogBundle\Doctrine\ORM\Repository\ProductModelRepository;
 use Pim\Component\Catalog\Model\ProductModelInterface;
@@ -39,12 +40,11 @@ class ProductModelController
     /**
      * Get get product with family and attributes data.
      *
-     * @param string $code   The product code.
-     * @param string $locale The needed locale.
+     * @param string $code The product code.
      *
      * @return JsonResponse
      */
-    public function getAction(string $code, string $locale): JsonResponse
+    public function getAction(string $code): JsonResponse
     {
         /** @var ProductModelInterface $productModel */
         $productModel = $this->productModelRepository->findOneByIdentifier($this->formatCode($code));
@@ -54,7 +54,11 @@ class ProductModelController
         }
 
         return new JsonResponse(
-            $this->productModelNormalizer->normalize($productModel, 'gesco', ['locale' => $locale])
+            $this->productModelNormalizer->normalize(
+                $productModel,
+                'gesco',
+                ['locale' => LocaleHelper::DEFAULT_LOCALE]
+            )
         );
     }
 

@@ -16,9 +16,6 @@ use Pim\Component\Catalog\Normalizer\Standard\Product\PropertiesNormalizer as Pa
  */
 class PropertiesNormalizer extends ParentNormalizer
 {
-    /** @var string */
-    protected $locale;
-
     /** @var FamilyNormalizer */
     protected $familyNormalizer;
 
@@ -40,17 +37,15 @@ class PropertiesNormalizer extends ParentNormalizer
     /**
      * {@inheritdoc}
      *
-     * @param ProductInterface $product
-     * @param null             $format
-     * @param array            $context
+     * @param ProductInterface $product The given product.
+     * @param string|null      $format  The normalizer format.
+     * @param array            $context The context of normalization.
      *
      * @return array|\Symfony\Component\Serializer\Normalizer\scalar
      */
     public function normalize($product, $format = null, array $context = [])
     {
         $data = parent::normalize($product, $format, $context);
-
-        $this->locale = $context['locale'];
 
         /** @var FamilyInterface $family */
         $family = $product->getFamily();

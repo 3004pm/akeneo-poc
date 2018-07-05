@@ -8,10 +8,7 @@ use Pim\Component\Catalog\AttributeTypes;
  * Class AttributeHelper.
  *
  * @package    App\ApiBundle\Helper
- * @copyright  Copyright (c) 2017 CGI (http://www.cgi.com)
- * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
  * @author     Jessy JURKOWSKI <jessy.jurkowski@cgi.com>
- * @version    1.0
  */
 class AttributeHelper
 {

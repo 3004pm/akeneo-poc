@@ -2,8 +2,6 @@
 
 namespace App\ApiBundle\Doctrine\Repository;
 
-use Doctrine\ORM\EntityRepository;
-use Doctrine\ORM\QueryBuilder;
 use Pim\Component\Catalog\Model\CategoryInterface;
 
 /**
@@ -12,40 +10,8 @@ use Pim\Component\Catalog\Model\CategoryInterface;
  * @package    App\ApiBundle\Doctrine\Repository
  * @author     Jessy JURKOWSKI <jessy.jurkowski@cgi.com>
  */
-class CategoryRepository
+class CategoryRepository extends AbstractApiRepository
 {
-    /** @var EntityRepository */
-    protected $repository;
-
-    /**
-     * EntityRepository constructor.
-     *
-     * @param EntityRepository $repository
-     */
-    public function __construct(EntityRepository $repository)
-    {
-        $this->repository = $repository;
-    }
-
-    /**
-     * Retrieve cetegories by their parent's code.
-     *
-     * @param string $code The parent's category code.
-     *
-     * @return CategoryInterface[]|array
-     */
-    public function findByParentCode(string $code): ?array
-    {
-        $queryBuilder = $this->getQueryBuilder();
-
-        return $queryBuilder
-            ->leftJoin('c.parent', 'parent')
-            ->where($queryBuilder->expr()->eq('parent.code', ':parentCode'))
-            ->setParameter('parentCode', $code)
-            ->getQuery()
-            ->execute();
-    }
-
     /**
      * Retrieve root category by code.
      *
@@ -56,7 +22,7 @@ class CategoryRepository
      */
     public function findRootCategoryByCode(string $code): ?CategoryInterface
     {
-        $queryBuilder = $this->getQueryBuilder();
+        $queryBuilder = $this->getQueryBuilder('c');
 
         return $queryBuilder
             ->where(
@@ -71,14 +37,23 @@ class CategoryRepository
     }
 
     /**
-     * Retrieve query builder from entity repository.
+     * findIdsByCodes
      *
-     * @param string $alias The table alias.
+     * @param array $codes
      *
-     * @return QueryBuilder
+     * @return array
      */
-    protected function getQueryBuilder(string $alias = 'c'): QueryBuilder
+    public function findIdsByCodes(array $codes): array
     {
-        return $this->repository->createQueryBuilder($alias);
+        $queryBuilder = $this->getQueryBuilder('c');
+
+        return $queryBuilder
+            ->select('c.id')
+            ->where(
+                $queryBuilder->expr()->in('c.code', ':codes')
+            )
+            ->setParameter('codes', $codes)
+            ->getQuery()
+            ->execute();
     }
 }

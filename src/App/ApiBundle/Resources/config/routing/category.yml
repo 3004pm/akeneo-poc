@@ -1,0 +1,4 @@
+app_api_gesco_category_list_products:
+    path: /gesco/categories/products/{categoryCodes}
+    defaults: { _controller: app_api.controller.gesco.category:listProductsAction, _format: json }
+    methods: [GET]

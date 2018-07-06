@@ -1,0 +1,4 @@
+app_api_gesco_product_model_get:
+    path: /gesco/product/models/{code}
+    defaults: { _controller: app_api.controller.gesco.product_model:getAction, _format: json }
+    methods: [GET]

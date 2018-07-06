@@ -1,2 +1,7 @@
 code;label-fr_FR;parent
-master;Verticale;
+master;Master;
+immobilier;Immobilier;master
+automobile;Automobile;master
+emploi;Emploi;master
+boutique;Boutique;master
+credits;Crédits;master

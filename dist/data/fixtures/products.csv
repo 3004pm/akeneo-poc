@@ -1,29 +1,43 @@
-sku;categories;enabled;family;parent;groups;account-fr_FR;avalmonthprice-fr_FR-EUR;billingtype-fr_FR;customvolume-fr_FR;discount-fr_FR;discountedunitpriceht-fr_FR-EUR;duration-fr_FR;enddate-fr_FR;flowspecificity-fr_FR;giftmonth-fr_FR;market-fr_FR;networkproduct-fr_FR;nombrebeneficiaires-fr_FR;optionboutique-fr_FR;PACK-groups;PACK-products;PACK-product_models;paymentdelay-fr_FR;paymentmode-fr_FR;plateformimmobilier-fr_FR;prixcredit-fr_FR-EUR;rangecreditachete;rangeimmobilierancien;softwareimmobilierancien-fr_FR;startdate-fr_FR;typeoffre-fr_FR;unitpriceht-fr_FR-EUR;UPSELL-groups;UPSELL-products;UPSELL-product_models;X_SELL-groups;X_SELL-products;X_SELL-product_models
-pir200;master;1;packimmoreference;Pack Immo Référence;;;53.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;200;;;;786.00;;;;;;
-pir250;master;1;packimmoreference;Pack Immo Référence;;;73.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;250;;;;977.00;;;;;;
-pir300;master;1;packimmoreference;Pack Immo Référence;;;94.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;300;;;;1166.00;;;;;;
-pir400;master;1;packimmoreference;Pack Immo Référence;;;136.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;400;;;;1545.00;;;;;;
-pir500;master;1;packimmoreference;Pack Immo Référence;;;178.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;500;;;;1917.00;;;;;;
-pir600;master;1;packimmoreference;Pack Immo Référence;;;217.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;600;;;;2261.00;;;;;;
-pir700;master;1;packimmoreference;Pack Immo Référence;;;255.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;700;;;;2615.00;;;;;;
-pir800;master;1;packimmoreference;Pack Immo Référence;;;294.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;800;;;;2966.00;;;;;;
-pir900;master;1;packimmoreference;Pack Immo Référence;;;336.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;900;;;;3332.00;;;;;;
-pir1000;master;1;packimmoreference;Pack Immo Référence;;;406.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;1000;;;;3700.00;;;;;;
-pir10;master;1;packimmoreference;Pack Immo Référence;;;26.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;10;;;;164.00;;;;;;
-pir1100;master;1;packimmoreference;Pack Immo Référence;;;447.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;1100;;;;4067.00;;;;;;
-pir1200;master;1;packimmoreference;Pack Immo Référence;;;487.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;1200;;;;4434.00;;;;;;
-pir1300;master;1;packimmoreference;Pack Immo Référence;;;529.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;1300;;;;4800.00;;;;;;
-pir1400;master;1;packimmoreference;Pack Immo Référence;;;569.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;1400;;;;5166.00;;;;;;
-pir1500;master;1;packimmoreference;Pack Immo Référence;;;609.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;1500;;;;5531.00;;;;;;
-pir1600;master;1;packimmoreference;Pack Immo Référence;;;650.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;1600;;;;5895.00;;;;;;
-pir1700;master;1;packimmoreference;Pack Immo Référence;;;691.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;1700;;;;6258.00;;;;;;
-pir1800;master;1;packimmoreference;Pack Immo Référence;;;731.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;1800;;;;6624.00;;;;;;
-pir1900;master;1;packimmoreference;Pack Immo Référence;;;771.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;1900;;;;6990.00;;;;;;
-pir2000;master;1;packimmoreference;Pack Immo Référence;;;813.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;2000;;;;7355.00;;;;;;
-pir15;master;1;packimmoreference;Pack Immo Référence;;;21.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;15;;;;222.00;;;;;;
-pir25;master;1;packimmoreference;Pack Immo Référence;;;33.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;25;;;;310.00;;;;;;
-pir50;master;1;packimmoreference;Pack Immo Référence;;;45.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;50;;;;420.00;;;;;;
-pir75;master;1;packimmoreference;Pack Immo Référence;;;36.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;75;;;;520.00;;;;;;
-pir100;master;1;packimmoreference;Pack Immo Référence;;;30.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;100;;;;586.00;;;;;;
-pir125;master;1;packimmoreference;Pack Immo Référence;;;35.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;125;;;;636.00;;;;;;
-pir150;master;1;packimmoreference;Pack Immo Référence;;;41.00;;;;;;;;;immobilier;0;;1;;"";;;;;;;150;;;;682.00;;;;;;
+sku;categories;enabled;family;parent;groups;account;avalmonthprice-EUR;billingtype;customvolume;discount;discountedunitpriceht-EUR;duration;enddate;flowspecificity;giftmonth;market;networkproduct;nombrebeneficiaires;optionboutique;PACK-groups;PACK-products;PACK-product_models;paymentdelay;paymentmode;plateformimmobilier;prixcredit-EUR;rangecreditachete;rangeimmobilierancien;softwareimmobilierancien;startdate;typeoffre;unitpriceht-EUR;UPSELL-groups;UPSELL-products;UPSELL-product_models;X_SELL-groups;X_SELL-products;X_SELL-product_models;libelle;plateformautomobile;rangeautomobile
+pir250;immobilier;1;packimmoreference;pack_immo_ref;;;73.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;250;;;reference;977.00;;;;;;;Pack Immo Référence 250;;
+pir300;immobilier;1;packimmoreference;pack_immo_ref;;;94.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;300;;;reference;1166.00;;;;;;;Pack Immo Référence 300;;
+pir400;immobilier;1;packimmoreference;pack_immo_ref;;;136.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;400;;;reference;1545.00;;;;;;;Pack Immo Référence 400;;
+pir500;immobilier;1;packimmoreference;pack_immo_ref;;;178.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;500;;;reference;1917.00;;;;;;;Pack Immo Référence 500;;
+pir600;immobilier;1;packimmoreference;pack_immo_ref;;;217.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;600;;;reference;2261.00;;;;;;;Pack Immo Référence 600;;
+pir700;immobilier;1;packimmoreference;pack_immo_ref;;;255.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;700;;;reference;2615.00;;;;;;;Pack Immo Référence 700;;
+pir800;immobilier;1;packimmoreference;pack_immo_ref;;;294.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;800;;;reference;2966.00;;;;;;;Pack Immo Référence 800;;
+pir900;immobilier;1;packimmoreference;pack_immo_ref;;;336.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;900;;;reference;3332.00;;;;;;;Pack Immo Référence 900;;
+pir1000;immobilier;1;packimmoreference;pack_immo_ref;;;406.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;1000;;;reference;3700.00;;;;;;;Pack Immo Référence 1000;;
+pir10;immobilier;1;packimmoreference;pack_immo_ref;;;26.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;10;;;reference;164.00;;;;;;;Pack Immo Référence 10;;
+pir1100;immobilier;1;packimmoreference;pack_immo_ref;;;447.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;1100;;;reference;4067.00;;;;;;;Pack Immo Référence 1100;;
+pir1200;immobilier;1;packimmoreference;pack_immo_ref;;;487.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;1200;;;reference;4434.00;;;;;;;Pack Immo Référence 1200;;
+pir1300;immobilier;1;packimmoreference;pack_immo_ref;;;529.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;1300;;;reference;4800.00;;;;;;;Pack Immo Référence 1300;;
+pir1400;immobilier;1;packimmoreference;pack_immo_ref;;;569.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;1400;;;reference;5166.00;;;;;;;Pack Immo Référence 1400;;
+pir1500;immobilier;1;packimmoreference;pack_immo_ref;;;609.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;1500;;;reference;5531.00;;;;;;;Pack Immo Référence 1500;;
+pir1600;immobilier;1;packimmoreference;pack_immo_ref;;;650.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;1600;;;reference;5895.00;;;;;;;Pack Immo Référence 1600;;
+pir1700;immobilier;1;packimmoreference;pack_immo_ref;;;691.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;1700;;;reference;6258.00;;;;;;;Pack Immo Référence 1700;;
+pir1800;immobilier;1;packimmoreference;pack_immo_ref;;;731.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;1800;;;reference;6624.00;;;;;;;Pack Immo Référence 1800;;
+pir1900;immobilier;1;packimmoreference;pack_immo_ref;;;771.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;1900;;;reference;6990.00;;;;;;;Pack Immo Référence 1900;;
+pir2000;immobilier;1;packimmoreference;pack_immo_ref;;;813.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;2000;;;reference;7355.00;;;;;;;Pack Immo Référence 2000;;
+pir15;immobilier;1;packimmoreference;pack_immo_ref;;;21.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;15;;;reference;222.00;;;;;;;Pack Immo Référence 15;;
+pir25;immobilier;1;packimmoreference;pack_immo_ref;;;33.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;25;;;reference;310.00;;;;;;;Pack Immo Référence 25;;
+pir50;immobilier;1;packimmoreference;pack_immo_ref;;;45.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;50;;;reference;420.00;;;;;;;Pack Immo Référence 50;;
+pir75;immobilier;1;packimmoreference;pack_immo_ref;;;36.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;75;;;reference;520.00;;;;;;;Pack Immo Référence 75;;
+pir100;immobilier;1;packimmoreference;pack_immo_ref;;;30.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;100;;;reference;586.00;;;;;;;Pack Immo Référence 100;;
+pir125;immobilier;1;packimmoreference;pack_immo_ref;;;35.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;125;;;reference;636.00;;;;;;;Pack Immo Référence 125;;
+pir150;immobilier;1;packimmoreference;pack_immo_ref;;;41.00;mensuelle;;;;;;;;immobilier;0;;1;;"";;;;;;;150;;;reference;682.00;;;;;;;Pack Immo Référence 150;;
+par20;automobile;1;packautoreference;pack_auto_ref;;;;mensuelle;;;;;;;;automobile;;;1;;;;;;;;;;;;reference;289;;;;;;;Pack Auto Référence 20;lbc;20
+par35;automobile;1;packautoreference;pack_auto_ref;;;;mensuelle;;;;;;;;automobile;;;1;;;;;;;;;;;;reference;400;;;;;;;Pack Auto Référence 35;lbc;35
+par50;automobile;1;packautoreference;pack_auto_ref;;;;mensuelle;;;;;;;;automobile;;;1;;;;;;;;;;;;reference;519;;;;;;;Pack Auto Référence 50;lbc;50
+par75;automobile;1;packautoreference;pack_auto_ref;;;;mensuelle;;;;;;;;automobile;;;1;;;;;;;;;;;;reference;626;;;;;;;Pack Auto Référence 75;lbc;75
+par100;automobile;1;packautoreference;pack_auto_ref;;;;mensuelle;;;;;;;;automobile;;;1;;;;;;;;;;;;reference;716;;;;;;;Pack Auto Référence 100;lbc;100
+par125;automobile;1;packautoreference;pack_auto_ref;;;;mensuelle;;;;;;;;automobile;;;1;;;;;;;;;;;;reference;789;;;;;;;Pack Auto Référence 125;lbc;125
+par150;automobile;1;packautoreference;pack_auto_ref;;;;mensuelle;;;;;;;;automobile;;;1;;;;;;;;;;;;reference;894;;;;;;;Pack Auto Référence 150;lbc;150
+par200;automobile;1;packautoreference;pack_auto_ref;;;;mensuelle;;;;;;;;automobile;;;1;;;;;;;;;;;;reference;1127;;;;;;;Pack Auto Référence 200;lbc;200
+par250;automobile;1;packautoreference;pack_auto_ref;;;;mensuelle;;;;;;;;automobile;;;1;;;;;;;;;;;;reference;1367;;;;;;;Pack Auto Référence 250;lbc;250
+par300;automobile;1;packautoreference;pack_auto_ref;;;;mensuelle;;;;;;;;automobile;;;1;;;;;;;;;;;;reference;1617;;;;;;;Pack Auto Référence 300;lbc;300
+par350;automobile;1;packautoreference;pack_auto_ref;;;;mensuelle;;;;;;;;automobile;;;1;;;;;;;;;;;;reference;1868;;;;;;;Pack Auto Référence 350;lbc;350
+par400;automobile;1;packautoreference;pack_auto_ref;;;;mensuelle;;;;;;;;automobile;;;1;;;;;;;;;;;;reference;2100;;;;;;;Pack Auto Référence 400;lbc;400
+par450;automobile;1;packautoreference;pack_auto_ref;;;;mensuelle;;;;;;;;automobile;;;1;;;;;;;;;;;;reference;2348;;;;;;;Pack Auto Référence 450;lbc;450
+par500;automobile;1;packautoreference;pack_auto_ref;;;;mensuelle;;;;;;;;automobile;;;1;;;;;;;;;;;;reference;2598;;;;;;;Pack Auto Référence 500;lbc;500
+par800;automobile;1;packautoreference;pack_auto_ref;;;;mensuelle;;;;;;;;automobile;;;1;;;;;;;;;;;;reference;3980;;;;;;;Pack Auto Référence 800;lbc;800

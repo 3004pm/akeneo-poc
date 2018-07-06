@@ -1,2 +1,4 @@
 code;family;label-fr_FR;variant-axes_1;variant-attributes_1
-variantpirvolume;packimmoreference;"Pack Immo Référence - Variation Volume";rangeimmobilierancien;sku,unitpriceht,avalmonthprice,rangeimmobilierancien
+variant_pir_volume;packimmoreference;Volume;rangeimmobilierancien;sku,unitpriceht,avalmonthprice,rangeimmobilierancien
+variant_par_volume;packautoreference;Volume;rangeautomobile;sku,unitpriceht,rangeautomobile
+variant_boutique_rubric;boutique;Rubrique;rubric;sku,unitpriceht,libelle,rubric

@@ -1,4 +1,13 @@
 code;label-fr_FR;attributes;attribute_as_image;attribute_as_label;requirements-leboncoin
-packimmoreference;"Pack Immo Référence";account,avalmonthprice,billingtype,customvolume,discount,discountedunitpriceht,duration,enddate,flowspecificity,giftmonth,libelle,market,networkproduct,nombrebeneficiaires,optionboutique,paymentdelay,paymentmode,plateformimmobilier,prixcredit,rangeimmobilierancien,sku,softwareimmobilierancien,startdate,typeoffre,unitpriceht;;libelle;libelle,market,sku,typeoffre,unitpriceht
-boutique;Boutique;account,billingtype,discount,discountedunitpriceht,duration,enddate,giftmonth,libelle,networkproduct,paymentdelay,paymentmode,rubric,sku,startdate,unitpriceht;;libelle;libelle,rubric,sku
-packautoreference;"Pack Auto Référence";account,billingtype,customvolume,discount,discountedunitpriceht,duration,enddate,giftmonth,libelle,market,optionboutique,paymentdelay,paymentmode,plateformautomobile,rangeautomobile,sku,softwareautomobile,startdate,typeoffre,unitpriceht;;libelle;libelle,market,sku,typeoffre,unitpriceht
+fam_pir;"Pack Immo Référence";"";;sku;sku
+fam_shop;Boutique;"";;sku;sku
+fam_par;"Pack Auto Référence";"";;sku;sku
+fam_pie;"Pack Import Emploi";"";;sku;sku
+fam_pae_tpe;"Pack Annonces Emploi TPE";"";;sku;sku
+fam_pir_aval_broadcast;"PIR - Diffusion AVAL";"";;sku;sku
+fam_pae;"Pack Annonce Emploi";"";;sku;sku
+fam_shop_premium;"Boutique Premium";"";;sku;sku
+fam_coin_premium;"Crédits premium";"";;sku;sku
+fam_pec;"Pack leboncoin Emploi cadres";"";;sku;sku
+fam_connection_fees;"Frais de Branchement ";"";;sku;sku
+fam_main_pir;"Offre Immo Référence";"";;sku;sku

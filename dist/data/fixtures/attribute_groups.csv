@@ -1,16 +1,17 @@
-code;label-fr_FR;sort_order
-other;Autre;9
-base;Identification;0
-date;Dates et durée;1
-produitimmobilier;Produit Immobilier;2
-produitemploi;Produit Emploi;3
-produitautomobile;Produit Automobile;4
-option;Options;8
-produitimmobilierneuf;Produit Immobilier Neuf;5
-produitimmobilierancien;Produit Immobilier Ancien;6
-billing;Facturation;7
-range;Paliers;0
-produitannonce;Produit Annonce;0
-produitboutique;Produit Boutique;0
-prix;Prix;0
-prixagence;Prix Agence;0
+code;label-fr_FR;attributes;sort_order
+gat_other;Autre;;9
+gat_base;Identification;;0
+gat_date;"Dates et durée";;1
+gat_pro_estate;"Produit Immobilier";;2
+gat_pro_job;"Produit Emploi";;3
+gat_pro_car;"Produit Automobile";;4
+gat_option;Options;;8
+gat_pro_estate_new;"Produit Immobilier Neuf";;5
+gat_pro_estate_classic;"Produit Immobilier Ancien";;6
+gat_billing;Facturation;;7
+gat_volume;Paliers;;0
+gat_pro_ad;"Produit Annonce";;0
+gat_pro_shop;"Produit Boutique";;0
+gat_price;Prix;;0
+gat_agency_price;"Prix Agence";;0
+gat_bundle;"Base Bundle";;0

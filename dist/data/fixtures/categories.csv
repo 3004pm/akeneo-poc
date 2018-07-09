@@ -1,7 +1,20 @@
 code;label-fr_FR;parent
-master;Master;
-immobilier;Immobilier;master
-automobile;Automobile;master
-emploi;Emploi;master
-boutique;Boutique;master
-credits;Crédits;master
+master;"Statut de commercialisation";
+cat_sale_ongoing;En cours;master
+cat_sale_pending;En attente;master
+cat_sale_unavailable;Non disponible;master
+cat_market;Vertical;
+cat_market_estate;Immobilier;cat_market
+cat_market_car;Automobile;cat_market
+cat_market_bike;Moto;cat_market
+cat_market_job;Emploi;cat_market
+cat_market_misc;Autres;cat_market
+cat_product;Type de produit;
+cat_product_ad;Annonce;cat_product
+cat_product_shop;Boutique;cat_product
+cat_product_coin;Crédit;cat_product
+cat_product_misc;Autre;cat_product
+cat_bt;Population commerciale;
+cat_bt_telemarketing;Télévente;cat_bt
+cat_bt_key_account;Grands comptes;cat_bt
+cat_bt_field_sales;Field Sales;cat_bt

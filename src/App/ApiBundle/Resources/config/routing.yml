@@ -9,3 +9,7 @@ app_product:
 app_product_model:
     resource: '@AppApiBundle/Resources/config/routing/product_model.yml'
     prefix: /rest/v1
+
+app_reference_data:
+    resource: '@AppApiBundle/Resources/config/routing/reference_data.yml'
+    prefix: /rest/v1

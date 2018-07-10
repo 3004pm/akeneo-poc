@@ -1,0 +1,47 @@
+app_custom_entity:
+    dependentattribute:
+        field:
+            label:
+                code: Code
+                attribute_code: Code attribut
+                option_code: Code option
+                dependent_attribute_code: Code attribut dépendant
+                dependent_option_code: Code option dépendante
+    acl:
+        dependentattribute:
+            index: Lister les attributs dépendants
+            create: Créer un attribut dépendant
+            edit: Editer un attribut dépendant
+            delete: Supprimer un attribut dépendant
+
+confirmation:
+    remove:
+        dependentattribute: Confirmez-vous la suppression de cet attribut dépendant ?
+
+error:
+    removing:
+        dependentattribute: L'attribut dépendant ne peut pas être supprimé
+
+dependentattribute:
+    overview: Attribut dépendant - Aperçu
+    edit: Editer un attribut dépendant
+    create: Créer un attribut dépendant
+    this:
+        edit: Editer cet attribut dépendant
+        show: Voir cet attribut dépendant
+        delete: Supprimer cet attribut dépendant
+    mass_edit:
+        title: Mass edit ces attributs dépendants
+        subtitle: Editer cet attribut dépendant|Editer ces attributs dépendants
+        confirm: Confirmez-vous la mise à jour
+
+btn:
+    create:
+        dependentattribute: Créer un attribut dépendant
+
+pim_custom_entity.reference_data.dependentattribute:
+    index: Lister les attributs dépendants
+    create: Créer un attribut dépendant
+    edit: Editer un attribut dépendant
+    delete: Supprimer un attribut dépendant
+    menu_entry: Attributs dépendants

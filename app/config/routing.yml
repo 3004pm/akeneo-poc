@@ -2,6 +2,10 @@ app_api:
     resource: "@AppApiBundle/Resources/config/routing.yml"
     prefix:   /api
 
+pim_customentity:
+    prefix: /reference-data
+    resource: "@PimCustomEntityBundle/Resources/config/routing.yml"
+
 # PIM
 pim_analytics:
     resource: "@PimAnalyticsBundle/Resources/config/routing.yml"

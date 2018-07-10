@@ -1,0 +1,59 @@
+extensions:
+    pim-dependentattribute-create-modal:
+        module: custom_entity/form/creation/modal
+        config:
+            labels:
+               title: pim_custom_entity.create_popin.title
+               subTitle: app_custom_entity.menu.item.reference_data.dependentattribute
+            picture: illustrations/User.svg
+            successMessage: pim_custom_entity.message.created
+            editRoute: pim_customentity_rest_get
+            routerKey: code
+            postUrl:
+                route: pim_customentity_rest_create
+                parameters:
+                    customEntityName: dependentattribute
+
+    pim-dependentattribute-create-attribute-code:
+        module: pim/form/common/fields/text
+        parent: pim-dependentattribute-create-modal
+        targetZone: fields
+        position: 20
+        config:
+            fieldName: attributeCode
+            label: app_custom_entity.dependentattribute.field.label.attribute_code
+            required: true
+            readOnly: false
+
+    pim-dependentattribute-create-option-code:
+        module: pim/form/common/fields/text
+        parent: pim-dependentattribute-create-modal
+        targetZone: fields
+        position: 30
+        config:
+            fieldName: optionCode
+            label: app_custom_entity.dependentattribute.field.label.option_code
+            required: true
+            readOnly: false
+
+    pim-dependentattribute-create-dependent-attribute-code:
+        module: pim/form/common/fields/text
+        parent: pim-dependentattribute-create-modal
+        targetZone: fields
+        position: 40
+        config:
+            fieldName: dependentAttributeCode
+            label: app_custom_entity.dependentattribute.field.label.dependent_attribute_code
+            required: true
+            readOnly: false
+
+    pim-dependentattribute-create-dependent-option-code:
+        module: pim/form/common/fields/text
+        parent: pim-dependentattribute-create-modal
+        targetZone: fields
+        position: 50
+        config:
+            fieldName: dependentOptionCode
+            label: app_custom_entity.dependentattribute.field.label.dependent_option_code
+            required: true
+            readOnly: false

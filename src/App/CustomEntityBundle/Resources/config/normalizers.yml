@@ -1,0 +1,7 @@
+services:
+    app_custom_entity.normalizer.standard.dependent_attribute:
+        public: false
+        class: App\CustomEntityBundle\Normalizer\Standard\DependentAttributeNormalizer
+        tags:
+            - { name: pim_serializer.normalizer, priority: 200 }
+            - { name: pim_versioning.serializer.normalizer, priority: 200 }

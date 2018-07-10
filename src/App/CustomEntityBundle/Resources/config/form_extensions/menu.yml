@@ -1,0 +1,11 @@
+extensions:
+    app-custom-entity-menu-reference-data-item-dependent-attribute:
+        module: pim/menu/item
+        parent: pim-menu-reference_data-navigation-block
+        aclResourceId: app_custom_entity_dependentattribute_index
+        position: 5
+        config:
+            title: app_custom_entity.menu.item.reference_data.dependentattribute
+            to: pim_customentity_index
+            routeParams:
+                customEntityName: dependentattribute

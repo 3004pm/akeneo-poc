@@ -12,9 +12,8 @@ use Symfony\Component\Serializer\Normalizer\NormalizerAwareTrait;
 /**
  * Class ProductController.
  *
- * @package    App\ApiBundle\Controller\Gesco
- * @author     Jessy JURKOWSKI <jessy.jurkowski@cgi.com>
- * @version    1.0
+ * @package App\ApiBundle\Controller\Gesco
+ * @author  Jessy JURKOWSKI <jessy.jurkowski@cgi.com>
  */
 class ProductController
 {

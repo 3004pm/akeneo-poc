@@ -13,8 +13,8 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 /**
  * Class CategoryController.
  *
- * @package    App\ApiBundle\Controller\Gesco
- * @author     Jessy JURKOWSKI <jessy.jurkowski@cgi.com>
+ * @package App\ApiBundle\Controller\Gesco
+ * @author  Jessy JURKOWSKI <jessy.jurkowski@cgi.com>
  */
 class CategoryController
 {

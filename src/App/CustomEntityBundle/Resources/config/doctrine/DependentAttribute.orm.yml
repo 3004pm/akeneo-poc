@@ -1,0 +1,50 @@
+App\CustomEntityBundle\Entity\DependentAttribute:
+    type: entity
+    table: app_custom_entity_dependent_attribute
+    changeTrackingPolicy: DEFERRED_EXPLICIT
+    indexes:
+        searchcode_idx:
+            columns:
+                - code
+    repositoryClass: Pim\Bundle\CustomEntityBundle\Entity\Repository\CustomEntityRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        code:
+            type: string
+            length: 100
+            unique: true
+        sortOrder:
+            type: integer
+            column: sort_order
+        attributeCode:
+            type: string
+            length: 100
+            nullable: false
+        optionCode:
+            type: string
+            length: 100
+            nullable: false
+        dependentAttributeCode:
+            type: string
+            length: 100
+            nullable: false
+        dependentOptionCode:
+            type: string
+            length: 100
+            nullable: false
+        created:
+            type: datetime
+            gedmo:
+                timestampable:
+                    on: create
+            nullable: true
+        updated:
+            type: datetime
+            gedmo:
+                timestampable:
+                    on: update
+            nullable: true

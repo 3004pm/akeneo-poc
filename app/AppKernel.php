@@ -21,6 +21,8 @@ class AppKernel extends Kernel
     {
         return [
             new App\ApiBundle\AppApiBundle(),
+            new App\CustomEntityBundle\AppCustomEntityBundle(),
+            new Pim\Bundle\CustomEntityBundle\PimCustomEntityBundle(),
         ];
     }
 

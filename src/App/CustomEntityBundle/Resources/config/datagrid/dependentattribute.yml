@@ -1,0 +1,134 @@
+datagrid:
+    dependentattribute:
+        options:
+            entityHint: dependentattribute
+            manageFilters: false
+        source:
+            type: pim_datasource_default
+            entity: App\CustomEntityBundle\Entity\DependentAttribute
+            repository_method: createDatagridQueryBuilder
+            acl_resource: app_custom_entity_dependentattribute_index
+        columns:
+            code:
+                label: app_custom_entity.dependentattribute.field.label.code
+            attributeCode:
+                label: app_custom_entity.dependentattribute.field.label.attribute_code
+            optionCode:
+                label: app_custom_entity.dependentattribute.field.label.option_code
+            dependentAttributeCode:
+                label: app_custom_entity.dependentattribute.field.label.dependent_attribute_code
+            dependentOptionCode:
+                label: app_custom_entity.dependentattribute.field.label.dependent_option_code
+            created:
+                label: Created
+                frontend_type: date
+            updated:
+                label: Updated
+                frontend_type: date
+        properties:
+            id: ~
+            edit_link:
+                type: url
+                route: pim_customentity_rest_get
+                params:
+                    - id
+                    - customEntityName
+            delete_link:
+                type: url
+                route: pim_customentity_rest_delete
+                params:
+                    - id
+                    - customEntityName
+        actions:
+            edit:
+                type:      navigate
+                label:     dependentattribute.this.edit
+                icon:      edit
+                link:      edit_link
+                rowAction: true
+                acl_resource: app_custom_entity_dependentattribute_edit
+            delete:
+                type:  delete
+                label: dependentattribute.this.delete
+                icon:  trash
+                link:  delete_link
+                acl_resource: app_custom_entity_dependentattribute_delete
+        filters:
+            columns:
+                code:
+                    type:      string
+                    label:     app_custom_entity.dependentattribute.field.label.code
+                    data_name: rd.code
+                attributeCode:
+                    type:      string
+                    label:     app_custom_entity.dependentattribute.field.label.attribute_code
+                    data_name: rd.attributeCode
+                optionCode:
+                    type:      string
+                    label:     app_custom_entity.dependentattribute.field.label.option_code
+                    data_name: rd.optionCode
+                dependentAttributeCode:
+                    type:      string
+                    label:     app_custom_entity.dependentattribute.field.label.dependent_attribute_code
+                    data_name: rd.dependentAttributeCode
+                dependentOptionCode:
+                    type:      string
+                    label:     app_custom_entity.dependentattribute.field.label.dependent_option_code
+                    data_name: rd.dependentOptionCode
+                created:
+                    type:             date
+                    label:            Created
+                    data_name:        rd.created
+                updated:
+                    type:             date
+                    label:            Updated
+                    data_name:        rd.updated
+        sorters:
+            columns:
+                code:
+                    data_name: rd.code
+                attributeCode:
+                    data_name: rd.attributeCode
+                optionCode:
+                    data_name: rd.optionCode
+                dependentAttributeCode:
+                    data_name: rd.dependentAttributeCode
+                dependentOptionCode:
+                    data_name: rd.dependentOptionCode
+                created:
+                    data_name: rd.created
+                updated:
+                    data_name: rd.updated
+            default:
+                code: '%oro_datagrid.extension.orm_sorter.class%::DIRECTION_ASC'
+
+        mass_actions:
+            delete:
+                type: delete
+                label: pim.grid.mass_action.delete
+                entity_name: dependentattribute
+                acl_resource: app_custom_entity_dependentattribute_delete
+                handler: mass_delete
+                className: 'AknButton AknButton--important AknButtonList-item'
+                messages:
+                    confirm_title: pim_datagrid.mass_action.delete.confirm_title
+                    confirm_content: pim_datagrid.mass_action.delete.confirm_content
+                    confirm_ok: pim_datagrid.mass_action.delete.confirm_ok
+                    success: pim_datagrid.mass_action.delete.success
+                    error: pim_datagrid.mass_action.delete.error
+                    empty_selection: pim_datagrid.mass_action.delete.empty_selection
+
+            quick_export_csv:
+                type: export
+                label: pim.grid.mass_action.quick_export.csv_all
+                className:  'AknButton AknButton--action AknButtonList-item'
+                handler: custom_quick_export
+                route: pim_customentity_quickexport
+                route_parameters:
+                    customEntityName: dependentattribute
+                    _format: csv
+                    _contentType: text/csv
+                context:
+                    withHeader: true
+                messages:
+                    empty_selection: pim_datagrid.mass_action.delete.empty_selection

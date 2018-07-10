@@ -1,0 +1,21 @@
+# Reference data
+## Dependent attribute
+app_custom_entity_dependentattribute_index:
+    type: action
+    label: app_custom_entity.acl.dependentattribute.index
+    group_name: pim_custom_entity.acl_group.reference_data
+
+app_custom_entity_dependentattribute_create:
+    type: action
+    label: app_custom_entity.acl.dependentattribute.create
+    group_name: pim_custom_entity.acl_group.reference_data
+
+app_custom_entity_dependentattribute_edit:
+    type: action
+    label: app_custom_entity.acl.dependentattribute.edit
+    group_name: pim_custom_entity.acl_group.reference_data
+
+app_custom_entity_dependentattribute_delete:
+    type: action
+    label: app_custom_entity.acl.dependentattribute.delete
+    group_name: pim_custom_entity.acl_group.reference_data

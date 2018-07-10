@@ -1,0 +1,7 @@
+services:
+    app_custom_entity.subscriber.dependent_attribute:
+        class: App\CustomEntityBundle\Subscriber\DependentAttributeSubscriber
+        arguments:
+            - '@app_custom_entity.manager.dependent_attribute'
+        tags:
+            - { name: kernel.event_subscriber }

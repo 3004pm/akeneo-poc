@@ -1,0 +1,6 @@
+custom_entities:
+    dependentattribute:
+        entity_class: App\CustomEntityBundle\Entity\DependentAttribute
+        options:
+            edit_form_extension: pim-dependentattribute-edit-form
+            manager: dependentattribute

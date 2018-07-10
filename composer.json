@@ -24,7 +24,8 @@
         ]
     },
     "require": {
-        "akeneo/pim-community-dev": "~2.3.0"
+        "akeneo/pim-community-dev": "~2.3.0",
+        "akeneo-labs/custom-entity-bundle": "2.4.*"
     },
     "require-dev": {
         "doctrine/migrations": "1.5.0",

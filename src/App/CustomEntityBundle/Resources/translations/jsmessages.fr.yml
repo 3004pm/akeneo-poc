@@ -1,0 +1,37 @@
+app_custom_entity:
+    menu:
+        item:
+            reference_data:
+                dependentattribute: Attributs dépendants
+    dependentattribute:
+        index_title: "] -Inf, 1] {{ count }} Attribut dépendant|] 1, Inf [{{ count }} Attributs dépendants"
+        selected: attributs dépendants sélectionnés
+        field:
+            label:
+                code: Code
+                attribute_code: Code attribut
+                option_code: Code option
+                dependent_attribute_code: Code attribut dépendant
+                dependent_option_code: Code option dépendante
+        info:
+            update_successful: L'attribut dépendant a été correctement mis à jour
+            update_failed: L'attribut dépendant ne peut pas être mis à jour
+            field_not_ready: "L'attribut dépendant ne peut pas être mis à jour maintenant. Le champ suivant n'est pas correct: {{ fields }}"
+    message:
+        confirmation:
+            remove:
+                dependentattribute: Confirmez-vous la suppression de cet attribut dépendant ?
+    acl:
+        dependentattribute:
+            index: Lister les attributs dépendants
+            create: Créer un attribut dépendant
+            edit: Editer un attribut dépendant
+            delete: Supprimer un attribut dépendant
+
+confirmation.remove.dependentattribute: Confirmez-vous la suppression de cet attribut dépendant ?
+
+flash:
+    dependentattribute:
+        created: L'attribut dépendant a été crée
+        removed: L'attribut dépendant a été supprimé
+        updated: L'attribut dépendant a été mis à jour

@@ -1,5 +1,6 @@
 update:
 	docker-compose exec fpm rm -rf var/cache/* var/logs/* web/bundles/* web/js/* web/css/*
+	docker-compose exec fpm bin/console d:s:u --env=prod --force
 	docker-compose exec fpm bin/console p:i:a --symlink
 	docker-compose exec fpm bin/console a:i --symlink
 	docker-compose run --rm node yarn run webpack

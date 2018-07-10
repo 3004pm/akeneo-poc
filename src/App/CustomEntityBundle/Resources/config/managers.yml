@@ -1,0 +1,6 @@
+services:
+    app_custom_entity.manager.dependent_attribute:
+        parent: pim_custom_entity.manager
+        class: App\CustomEntityBundle\Manager\DependentAttributeManager
+        tags:
+            - { name: pim_custom_entity.manager, alias: dependentattribute }

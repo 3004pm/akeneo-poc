@@ -10,5 +10,7 @@ parameters:
     product_index_name:                   akeneo_pim_product
     product_model_index_name:             akeneo_pim_product_model
     product_and_product_model_index_name: akeneo_pim_product_and_product_model
-    index_hosts: 'elastic:changeme@elasticsearch:9200'
-    installer_data: '%kernel.root_dir%/../dist/data/fixtures'
+    index_hosts:                          'elastic:changeme@elasticsearch:9200'
+    installer_data:                       '%kernel.root_dir%/../dist/data/fixtures'
+    redis_host:                           redis
+    redis_port:                           6379

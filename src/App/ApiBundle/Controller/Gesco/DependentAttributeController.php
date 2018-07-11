@@ -2,13 +2,13 @@
 
 namespace App\ApiBundle\Controller\Gesco;
 
-use Akeneo\Component\StorageUtils\Detacher\BulkObjectDetacherInterface;
 use App\ApiBundle\Helper\LocaleHelper;
+use App\CacheBundle\Controller\AbstractController;
 use App\CustomEntityBundle\Entity\DependentAttribute;
 use Pim\Bundle\CustomEntityBundle\Entity\Repository\CustomEntityRepository;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Symfony\Component\Serializer\Normalizer\NormalizerAwareTrait;
 
 /**
  * Class ReferenceDataController.
@@ -16,71 +16,106 @@ use Symfony\Component\Serializer\Normalizer\NormalizerAwareTrait;
  * @package App\ApiBundle\Controller\Gesco
  * @author  Jessy JURKOWSKI <jessy.jurkowski@cgi.com>
  */
-class DependentAttributeController
+class DependentAttributeController extends AbstractController
 {
-    use NormalizerAwareTrait;
-
     /** @var CustomEntityRepository */
     protected $dependentAttributeRepository;
-    /** @var BulkObjectDetacherInterface */
-    protected $objectDetacher;
 
     /**
-     * ProductModelController constructor.
+     * getAllAction
      *
-     * @param CustomEntityRepository      $dependentAttributeRepository
-     * @param BulkObjectDetacherInterface $objectDetacher
+     * @param Request $request The request variable.
+     *
+     * @return JsonResponse
+     * @throws \Psr\Cache\InvalidArgumentException
      */
-    public function __construct(
-        CustomEntityRepository $dependentAttributeRepository,
-        BulkObjectDetacherInterface $objectDetacher
-    ) {
-        $this->dependentAttributeRepository = $dependentAttributeRepository;
-        $this->objectDetacher               = $objectDetacher;
+    public function getAllAction(Request $request): JsonResponse
+    {
+        $cacheItem = $this->getCachedItem($request);
+
+        if (false === $cacheItem->isHit()) {
+            $dependentAttributes = $this->getDependentAttributeRepository()->findAll();
+
+            $normalizedData = [];
+
+            /** @var DependentAttribute $dependentAttribute */
+            foreach ($dependentAttributes as $dependentAttribute) {
+                $normalizedData[] = $this->getNormalizer()->normalize(
+                    $dependentAttribute,
+                    'gesco',
+                    ['locale' => LocaleHelper::DEFAULT_LOCALE]
+                );
+            }
+
+            $this->getRedisManager()->setCacheData($cacheItem, $normalizedData);
+        }
+
+        return new JsonResponse($this->getRedisManager()->getCacheData($cacheItem));
     }
 
     /**
      * Get get product with family and attributes data.
      *
-     * @param string $attributeCode
-     * @param string $optionCode
+     * @param Request $request The request variable.
+     * @param string  $attributeCode
+     * @param string  $optionCode
      *
      * @return JsonResponse
+     * @throws \Psr\Cache\InvalidArgumentException
      */
     public function getByAttributeAndOptionAction(
+        Request $request,
         string $attributeCode,
         string $optionCode
     ): JsonResponse {
-        $dependentAttributes = $this->dependentAttributeRepository->findBy(
-            [
-                'attributeCode' => $attributeCode,
-                'optionCode'    => $optionCode,
-            ]
-        );
+        $cacheItem = $this->getCachedItem($request);
 
-        if (empty($dependentAttributes)) {
-            throw new NotFoundHttpException(
-                sprintf(
-                    'No dependent attribute found for attribute code "%s" and option code "%s".',
-                    $attributeCode,
-                    $optionCode
-                )
+        if (false === $cacheItem->isHit()) {
+            $dependentAttributes = $this->getDependentAttributeRepository()->findBy(
+                [
+                    'attributeCode' => $attributeCode,
+                    'optionCode'    => $optionCode,
+                ]
             );
+
+            if (empty($dependentAttributes)) {
+                throw new NotFoundHttpException(
+                    sprintf(
+                        'No dependent attribute found for attribute code "%s" and option code "%s".',
+                        $attributeCode,
+                        $optionCode
+                    )
+                );
+            }
+
+            $normalizedData = [];
+
+            /** @var DependentAttribute $dependentAttribute */
+            foreach ($dependentAttributes as $dependentAttribute) {
+                $normalizedData[] = $this->getNormalizer()->normalize(
+                    $dependentAttribute,
+                    'gesco',
+                    ['locale' => LocaleHelper::DEFAULT_LOCALE]
+                );
+            }
+
+            $this->getRedisManager()->setCacheData($cacheItem, $normalizedData);
         }
 
-        $normalizedData = [];
+        return new JsonResponse($this->getRedisManager()->getCacheData($cacheItem));
+    }
 
-        /** @var DependentAttribute $dependentAttribute */
-        foreach ($dependentAttributes as $dependentAttribute) {
-            $normalizedData[] = $this->normalizer->normalize(
-                $dependentAttribute,
-                'gesco',
-                ['locale' => LocaleHelper::DEFAULT_LOCALE]
-            );
+    /**
+     * Retrieve dependent attribute repository from container.
+     *
+     * @return CustomEntityRepository
+     */
+    protected function getDependentAttributeRepository(): CustomEntityRepository
+    {
+        if (null === $this->dependentAttributeRepository) {
+            $this->dependentAttributeRepository = $this->getService('app_custom_entity.repository.dependentattribute');
         }
 
-        $this->objectDetacher->detachAll($dependentAttributes);
-
-        return new JsonResponse($normalizedData);
+        return $this->dependentAttributeRepository;
     }
 }

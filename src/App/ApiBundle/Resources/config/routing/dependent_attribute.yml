@@ -1,8 +1,7 @@
 app_api_gesco_dependent_attribute_get_all:
-    path: /gesco/reference-data/{customEntityName}
+    path: /gesco/reference-data/dependentattribute
     defaults:
-        _controller: pim_custom_entity.controller:executeAction
-        actionType: rest_getall
+        _controller: app_api.controller.gesco.dependent_attribute:getAllAction
     methods: [GET]
 
 app_api_gesco_dependent_attribute_get_by_attribute_and_option:

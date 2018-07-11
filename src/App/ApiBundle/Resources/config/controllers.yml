@@ -1,27 +1,12 @@
 services:
     app_api.controller.gesco.category:
         class:  App\ApiBundle\Controller\Gesco\CategoryController
-        arguments:
-            - '@app_api.repository.category'
-            - '@app_api.normalizer.gesco.category'
 
     app_api.controller.gesco.product:
         class:  App\ApiBundle\Controller\Gesco\ProductController
-        arguments:
-            - '@pim_catalog.query.product_query_builder_from_size_factory'
-        calls:
-            - [ setNormalizer, ['@pim_serializer'] ]
 
     app_api.controller.gesco.product_model:
         class:  App\ApiBundle\Controller\Gesco\ProductModelController
-        arguments:
-            - '@pim_catalog.repository.product_model'
-            - '@app_api.normalizer.gesco.product_model'
 
     app_api.controller.gesco.dependent_attribute:
         class:  App\ApiBundle\Controller\Gesco\DependentAttributeController
-        arguments:
-            - '@app_custom_entity.repository.dependentattribute'
-            - '@akeneo_storage_utils.doctrine.object_detacher'
-        calls:
-            - [ setNormalizer, ['@pim_serializer'] ]

@@ -1,0 +1,7 @@
+services:
+    app_cache.subscriber.object:
+        class: App\CacheBundle\Subscriber\ObjectSubscriber
+        arguments:
+            - '@app_cache.manager.redis'
+        tags:
+            - { name: kernel.event_subscriber }

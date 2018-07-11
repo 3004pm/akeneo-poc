@@ -41,7 +41,7 @@ class PropertiesNormalizer extends ParentNormalizer
      * @param string|null      $format  The normalizer format.
      * @param array            $context The context of normalization.
      *
-     * @return array|\Symfony\Component\Serializer\Normalizer\scalar
+     * @return array
      */
     public function normalize($product, $format = null, array $context = [])
     {

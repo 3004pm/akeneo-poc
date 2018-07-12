@@ -5,7 +5,7 @@ services:
     build: ./docker/fpm
     environment:
       COMPOSER_HOME: '/home/docker/.composer'
-      PHP_IDE_CONFIG: 'serverName=pim-ee-cli'
+      PHP_IDE_CONFIG: 'serverName=pim-ce-cli'
       PHP_XDEBUG_ENABLED: 0
       PHP_XDEBUG_IDE_KEY: 'XDEBUG_IDE_KEY'
       XDEBUG_CONFIG: 'remote_host=xxx.xxx.xxx.xxx'
@@ -14,7 +14,6 @@ services:
     volumes:
       - ./:/srv/pim
       - ~/.composer:/home/docker/.composer
-      - ./docker/id_rsa:/home/.ssh/id_rsa
     working_dir: /srv/pim
     networks:
       - akeneo
@@ -27,7 +26,6 @@ services:
     volumes:
       - ./:/srv/pim
       - ~/.cache/yarn:/home/node/.yarn-cache
-#      - ./docker/.yarnrc:/root/.yarnrc
     working_dir: /srv/pim
     networks:
       - akeneo
@@ -37,7 +35,7 @@ services:
     depends_on:
       - fpm
     environment:
-      PHP_IDE_CONFIG: 'serverName=pim-ee'
+      PHP_IDE_CONFIG: 'serverName=pim-ce'
     ports:
       - '8080:80'
     volumes:

@@ -8,7 +8,7 @@ use App\ApiBundle\Doctrine\Repository\ProductModelRepository;
 use App\ApiBundle\Doctrine\Repository\ProductRepository;
 use Pim\Component\Catalog\Model\CategoryInterface;
 use Pim\Component\Catalog\Model\ProductInterface;
-use Pim\Component\Catalog\Model\ProductModelInterface;
+use Pim\Component\Catalog\Model\ProductModel;
 
 /**
  * Class CategoryNormalizer.
@@ -68,8 +68,7 @@ class CategoryNormalizer
         foreach ($category->getChildren() as $childCategory) {
             $allCategoryCodes = \array_merge($categoryCodes, [$childCategory->getCode()]);
 
-            $data[$childCategory->getId()] = [
-                'categoryCode'  => $childCategory->getCode(),
+            $data[$childCategory->getCode()] = [
                 'categoryLabel' => (string)$childCategory->setLocale($context['locale']),
                 'products'      => array_merge(
                     $this->getNonVariantProductData($allCategoryCodes),
@@ -84,7 +83,7 @@ class CategoryNormalizer
     /**
      * Retrieve non variant product data from the given category.
      *
-     * @param array $categoryCodes The category codes owned by products.
+     * @param array       $categoryCodes The category codes owned by products.
      *
      * @return array
      */
@@ -97,6 +96,7 @@ class CategoryNormalizer
         /** @var ProductInterface $product */
         foreach ($products as $product) {
             $productsData[$product->getId()] = [
+                'productLabel'   => $product->getLabel(),
                 'isProductModel' => false,
                 'identifier'     => $product->getIdentifier(),
             ];
@@ -110,7 +110,7 @@ class CategoryNormalizer
     /**
      * Retrieve product model data contains in all the given categories.
      *
-     * @param array $categoryCodes
+     * @param array $categoryCodes The category codes owned by product models.
      *
      * @return array
      */
@@ -121,9 +121,10 @@ class CategoryNormalizer
         $productModelsData = [];
 
 
-        /** @var ProductModelInterface $productModel */
+        /** @var ProductModel $productModel */
         foreach ($productModels as $productModel) {
             $productModelsData[$productModel->getId()] = [
+                'productLabel'   => $productModel->getLabel(),
                 'isProductModel' => true,
                 'identifier'     => $productModel->getCode(),
             ];

@@ -1,0 +1,11 @@
+app_api_gesco_dependent_attribute_get_all:
+    path: /gesco/reference-data/dependentattribute
+    defaults:
+        _controller: app_api.controller.gesco.dependent_attribute:getAllAction
+    methods: [GET]
+
+app_api_gesco_dependent_attribute_get_by_attribute_and_option:
+    path: /gesco/reference-data/dependentattribute/{attributeCode}/{optionCode}
+    defaults:
+        _controller: app_api.controller.gesco.dependent_attribute:getByAttributeAndOptionAction
+    methods: [GET]

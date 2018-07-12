@@ -1,15 +1,15 @@
 <?php
 
-namespace App\ApiBundle;
+namespace App\CacheBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class AppApiBundle.
+ * Class AppCacheBundle.
  *
  * @package App\ApiBundle
  * @author  Jessy JURKOWSKI <jessy.jurkowski@cgi.com>
  */
-class AppApiBundle extends Bundle
+class AppCacheBundle extends Bundle
 {
 }

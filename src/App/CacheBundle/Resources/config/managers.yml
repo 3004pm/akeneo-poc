@@ -1,0 +1,5 @@
+services:
+    app_cache.manager.redis:
+        class:  App\CacheBundle\Manager\RedisManager
+        arguments:
+            - '@cache.app'

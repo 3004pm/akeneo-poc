@@ -1,0 +1,8 @@
+services:
+    app_custom_entity.repository.dependentattribute:
+        class: Pim\Bundle\CustomEntityBundle\Entity\Repository\CustomEntityRepository
+        factory: 'doctrine.orm.entity_manager:getRepository'
+        arguments:
+            - App\CustomEntityBundle\Entity\DependentAttribute
+        tags:
+            - { name: 'pim_repository' }

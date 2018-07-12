@@ -31,4 +31,25 @@ class DependentAttributeManager extends Manager
 
         $dependentAttribute->setCode($dependentAttributeCode);
     }
+
+    /**
+     * Retrive dependent attributs by criteria
+     *
+     * @param DependentAttribute $dependentAttribute The dependent attribute.
+     * @param array              $criteria
+     * @param array|null         $orderBy
+     * @param null               $limit
+     * @param null               $offset
+     *
+     * @return array
+     */
+    public function findBy(
+        DependentAttribute $dependentAttribute,
+        array $criteria,
+        array $orderBy = null,
+        $limit = null,
+        $offset = null
+    ): array {
+        return $this->em->getRepository($dependentAttribute)->findBy($criteria, $orderBy, $limit, $offset);
+    }
 }

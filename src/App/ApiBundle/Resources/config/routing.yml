@@ -2,14 +2,14 @@ app_category:
     resource: '@AppApiBundle/Resources/config/routing/category.yml'
     prefix: /rest/v1
 
+app_dependent_attribute:
+    resource: '@AppApiBundle/Resources/config/routing/dependent_attribute.yml'
+    prefix: /rest/v1
+
 app_product:
     resource: '@AppApiBundle/Resources/config/routing/product.yml'
     prefix: /rest/v1
 
 app_product_model:
     resource: '@AppApiBundle/Resources/config/routing/product_model.yml'
-    prefix: /rest/v1
-
-app_reference_data:
-    resource: '@AppApiBundle/Resources/config/routing/reference_data.yml'
     prefix: /rest/v1

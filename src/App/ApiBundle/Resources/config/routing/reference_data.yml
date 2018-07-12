@@ -1,6 +1,0 @@
-app_api_gesco_reference_data_getall:
-    path: /gesco/reference-data/{customEntityName}
-    defaults:
-        _controller: pim_custom_entity.controller:executeAction
-        actionType: rest_getall
-    methods: [GET]

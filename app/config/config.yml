@@ -32,6 +32,9 @@ framework:
         packages:
             frontend:
                 version_strategy: pim_enrich.version_strategy
+    cache:
+        app: cache.adapter.redis
+        default_redis_provider: "redis://%redis_host%:%redis_port%"
 
 # Twig Configuration
 twig:
